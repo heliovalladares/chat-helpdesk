@@ -1,0 +1,20 @@
+[
+  {
+    "perguntas": [
+      "login",
+      "acessar sistema",
+      "entrar no sistema",
+      "logar"
+    ],
+    "resposta": "Para acessar o sistema, use seu usuário e senha corporativos."
+  },
+  {
+    "perguntas": [
+      "horario atendimento",
+      "funciona que horas",
+      "expediente",
+      "horario suporte"
+    ],
+    "resposta": "Nosso suporte funciona de segunda a sexta, das 8h às 18h."
+  }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Help Desk</title>
+</head>
+<body>
+
+<h2>Admin Help Desk</h2>
+
+<input id="senha" type="password" placeholder="Senha admin"><br><br>
+
+<input id="perguntas" placeholder="Perguntas separadas por vírgula"><br><br>
+<textarea id="resposta" placeholder="Resposta"></textarea><br><br>
+
+<button onclick="salvar()">Salvar</button>
+
+<script>
+let respostas = [];
+
+fetch("api/load.php")
+  .then(res => res.json())
+  .then(data => respostas = data);
+
+function salvar() {
+  const senha = document.getElementById("senha").value;
+  const perguntas = document.getElementById("perguntas").value.split(",").map(p => p.trim());
+  const resposta = document.getElementById("resposta").value;
+
+  respostas.push({ perguntas, resposta });
+
+  fetch("api/save.php", {
+    method: "POST",
+    body: JSON.stringify({ senha, respostas })
+  })
+  .then(r => r.text())
+  .then(alert);
+}
+</script>
+
+</body>
+</html>

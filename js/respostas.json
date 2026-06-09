@@ -1,0 +1,500 @@
+[
+  {
+    "perguntas": [
+      "configurar simulador cashlogy",
+      "instalar simulador",
+      "cashlogy setup wizard",
+      "drivers cashlogy",
+      "simulador azkoyen"
+    ],
+    "resposta": "<b>[Configuração do Simulador Cashlogy - Integração TCP/IP]</b><br><br><b>Passo a Passo para Instalação:</b><br>1. Instale os drivers através do executável <b>Cashlogy Setup Wizard</b> (baixe pelo site técnico da Azkoyen em Herramientas > Drivers Versión Actual).<br>2. Execute o instalador do <b>Cashlogy Simulator</b>. <i>Nota: Recomenda-se NÃO instalar no diretório padrão 'Program Files' e garantir permissões de Leitura/Escrita na pasta escolhida.</i><br>3. Reinicie o computador após concluir a instalação para aplicar as alterações."
+  },
+  {
+    "perguntas": [
+      "configurar connector",
+      "cashlogyconnector_config",
+      "vincular simulador",
+      "conectar simulador"
+    ],
+    "resposta": "<b>[Configuração do Connector / Simulador]</b><br><br><b>Como vincular o simulador ao inicializar:</b><br>1. Vá até o diretório <code>C:\\Cashlogy\\CashlogyConnector</code>.<br>2. Abra o executável <b>Cashlogyconnector_Config</b>.<br>3. No campo de configuração do dispositivo, selecione o modelo do simulador correspondente à sua aplicação para que ele seja lançado automaticamente no arranque.<br>4. Para testar se o Connector está respondendo, vá até <code>C:\\Cashlogy\\CashlogyConfig</code> e execute a aplicação <b>CashlogyConfig</b>."
+  },
+  {
+    "perguntas": [
+      "testar funcionamento cashlogy",
+      "cashlogyconnector_test",
+      "simular cobros",
+      "testar simulador"
+    ],
+    "resposta": "<b>[Teste de Funcionamento do Simulador Cashlogy]</b><br><br><b>Como realizar os testes na máquina virtual:</b><br>1. Reinicie o PC/TPV para validar as configurações de rede.<br>2. Acesse a pasta <code>_Test</code> e execute o aplicativo <b>CashlogyConnector_Test(ES)</b>.<br>3. Clique em <b>Conectar</b> e depois em <b>Inicializar Cashlogy</b>.<br>4. A tela do <b>CashlogySimulator</b> abrirá exibindo o estado <i>'State: IDLE'</i> e o painel de moedas/cédulas (Dispense/Deposit).<br>5. <i>Aviso:</i> O simulador serve para testar inicialização, fechamento e recebimentos, mas <u>não</u> simula atolamentos físicos ou gestão de erros de hardware."
+  },
+  {
+    "perguntas": [
+      "Ola",
+      "Oi",
+      "Boa tarde",
+      "Bom dia",
+      "tudo bem",
+      "estou com duvida"
+    ],
+    "resposta": "<b>Olá, como te posso ajudar hoje?</b>"
+  },
+  {
+    "perguntas": [
+      "led amarelo piscando 2 vezes",
+      "atolamento no aceitador",
+      "nota presa na cabeça",
+      "jam in acceptor",
+      "erro nota travada"
+    ],
+    "resposta": "<b>[Erro: Atolamento no Aceitador - LED Amarelo pisca 2x]</b><br><br><b>Como resolver:</b><br>1. Coloque a palma da mão na frente do módulo do validador e os dedos na parte superior da tampa amarela.<br>2. Puxe a tampa para a frente e levante-a para abrir a cabeça do validador totalmente.<br>3. Remova qualquer cédula presa ou objeto estranho do caminho da nota.<br>4. Limpe os prismas óticos com um pano limpo que não solte fiapos e feche a tampa com firmeza."
+  },
+  {
+    "perguntas": [
+      "led amarelo piscando 3 vezes",
+      "nota presa no cofre",
+      "atolamento na gaveta",
+      "jam in cashbox",
+      "cedula presa caixa"
+    ],
+    "resposta": "<b>[Erro: Atolamento no Cofre/Gaveta - LED Amarelo pisca 3x]</b><br><br><b>Como resolver:</b><br>1. Remova o módulo da cabeça (aceitador) puxando a alavanca frontal para cima.<br>2. Olhe pela abertura superior do cofre (cashbox) para localizar a nota travada.<br>3. Retire a nota com cuidado para não rasgar.<br>4. Reencaixe a cabeça do validador no chassis e verifique se o LED voltou a ficar Verde Sólido."
+  },
+  {
+    "perguntas": [
+      "led amarelo aceso direto",
+      "led amarelo solido",
+      "cofre fora da posicao",
+      "cashbox not seated",
+      "sem gaveta"
+    ],
+    "resposta": "<b>[Erro: Cofre Não Encaixado ou Ausente - LED Amarelo Sólido]</b><br><br><b>Como resolver:</b><br>1. Retire a gaveta de dinheiro (cashbox) completamente do chassis de metal.<br>2. Verifique se há sujeira ou moedas caídas no fundo do trilho que estejam impedindo o encaixe perfeito.<br>3. Empurre a gaveta de volta com firmeza até ouvir o estalo do trinco físico.<br>4. O LED deve mudar imediatamente para Verde se estiver bem posicionado."
+  },
+  {
+    "perguntas": [
+      "led vermelho aceso direto",
+      "led vermelho solido",
+      "cofre cheio",
+      "cashbox full",
+      "gaveta cheia"
+    ],
+    "resposta": "<b>[Erro: Gaveta Cheia - LED Vermelho Sólido]</b><br><br><b>Como resolver:</b><br>1. O limite de armazenamento do cofre foi atingido.<br>2. Faça a sangria do equipamento retirando a gaveta atual.<br>3. Insira uma gaveta de notas (cashbox) vazia e limpa para liberar o funcionamento do terminal automaticamente."
+  },
+  {
+    "perguntas": [
+      "led vermelho piscando 1 vez",
+      "falha de hardware",
+      "acceptor hardware fault",
+      "erro na cabeça",
+      "defeito validador"
+    ],
+    "resposta": "<b>[Erro: Falha Crítica de Hardware - LED Vermelho pisca 1x]</b><br><br><b>Como resolver:</b><br>1. O validador detectou uma falha interna permanente em seus componentes.<br>2. Desligue a alimentação do terminal.<br>3. Remova a cabeça do validador defeituosa puxando a trava.<br>4. Substitua por uma cabeça reserva configurada (spare) e religue o equipamento."
+  },
+  {
+    "perguntas": [
+      "como limpar sensores",
+      "limpeza do validador",
+      "poor acceptance",
+      "rejeitando notas",
+      "led amarelo pisca 1 vez"
+    ],
+    "resposta": "<b>[Procedimento de Limpeza / Baixa Aceitação - LED Amarelo pisca 1x]</b><br><br><b>Como fazer:</b><br>1. Abra a tampa superior amarela puxando-a para cima e para trás.<br>2. Use um pano limpo, macio e ligeiramente umedecido com água e sabão neutro para limpar os sensores óticos e os roletes de borracha.<br>3. <b>ATENÇÃO:</b> Nunca use álcool isopropílico, solventes ou produtos abrasivos nas lentes óticas, pois eles podem opacar o plástico e inutilizar o sensor.<br>4. Seque com um pano limpo e feche a cabeça."
+  },
+
+  {
+    "perguntas": [
+      "como ativar licenca cashlogy cloud",
+      "ativacao online cashlogy",
+      "inserir codigo de licenca",
+      "ativar maquina cashlogy 2023"
+    ],
+    "resposta": "<b>[Ativação Online da Licença - Cashlogy Cloud]</b><br><br><b>Como fazer:</b><br>1. Certifica-te de que a máquina tem ligação à Internet.<br>2. Ao iniciar o software pela primeira vez, uma janela dedicada à introdução da licença ficará em primeiro plano.<br>3. Insere o código de licença gerado na plataforma Cloud e clica em <b>Ativar</b>.<br>4. O sistema valida os dados e mostra o símbolo de estado da licença na cor <b>Verde</b>, confirmando que a máquina está pronta a operar."
+  },
+  {
+    "perguntas": [
+      "ativacao offline cashlogy",
+      "ativar licenca sem internet",
+      "ficheiro de licenca .lic",
+      "gerar licenca offline"
+    ],
+    "resposta": "<b>[Ativação Offline (Sem Internet) - Cashlogy Cloud]</b><br><br><b>Como fazer:</b><br>1. Na plataforma Cashlogy Cloud, acede aos dados da licença da máquina e faz o download do ficheiro com a extensão <code>.lic</code> para uma PEN USB.<br>2. Liga a PEN USB no POS/computador da máquina Cashlogy.<br>3. Na janela de ativação do software, seleciona a opção <b>Ativação Offline</b>.<br>4. Carrega o ficheiro <code>.lic</code> a partir da PEN USB para concluir o licenciamento com sucesso."
+  },
+  {
+    "perguntas": [
+      "como desativar licenca cashlogy",
+      "retirar licenca da maquina",
+      "remover licenca cashlogy cloud",
+      "desativar pos"
+    ],
+    "resposta": "<b>[Desativação / Remoção de Licença]</b><br><br><b>Como fazer:</b><br>1. Abre o utilitário de configuração da Cashlogy na máquina.<br>2. Procura pela secção de Licenciamento e clica no botão <b>Desativar Licença</b>.<br>3. Confirma a operação no pop-up de segurança que será exibido.<br>4. O símbolo de estado da licença mudará para a cor <b>Vermelha</b>, indicando que a licença foi libertada corretamente e já pode ser reutilizada noutro equipamento."
+  },
+  {
+    "perguntas": [
+      "recomendacoes licenca cashlogy",
+      "troca de pos cashlogy",
+      "copiar codigo licenca",
+      "service manager cashlogy"
+    ],
+    "resposta": "<b>[Recomendações Importantes de Licenciamento]</b><br><br><b>Alertas para o Técnico:</b><br>1. <b>Troca de POS / Computador:</b> Se mudares o computador ou moveres a máquina de instalações, deves reutilizar a licença já criada que está associada ao número de série desse equipamento físico.<br>2. <b>Cuidado ao Copiar:</b> Copia sempre o código de licença para um bloco de notas ou leva-o num ficheiro <code>.txt</code> antes de abrir o software de gestão ou o 'Cashlogy Test'. A janela de ativação fica presa em primeiro plano e impede o acesso ao ambiente de trabalho.<br>3. <b>Service Manager:</b> Utiliza esta opção na Cloud para gerir e visualizar o estado de todas as licenças do teu parque de máquinas."
+  },
+
+  {
+    "perguntas": [
+      "o que e cashlogy connector",
+      "como funciona o connector",
+      "porta tcp ip cashlogy",
+      "modelo cliente servidor"
+    ],
+    "resposta": "<b>[Conceito: Cashlogy Connector]</b><br><br><b>Como funciona:</b><br>1. É um módulo de software que permite comunicar com os dispositivos Azkoyen sem usar funções OPOS de baixo nível.<br>2. Funciona num modelo <b>cliente-servidor</b> através de uma porta <b>TCP/IP</b> (a porta padrão é a <code>8092</code>).<br>3. O software do PDV envia uma string de texto com um comando e parâmetros para o IP/porta do Connector e aguarda o retorno com o estado da operação."
+  },
+  {
+    "perguntas": [
+      "requisitos minimos sistema",
+      "requisitos de hardware cashlogy",
+      "memoria ram mini pc",
+      "sistema operacional suportado"
+    ],
+    "resposta": "<b>[Requisitos Mínimos de Sistema]</b><br><br><b>Especificações para o Windows:</b><br>1. <b>Processador:</b> Via C7 1800MHz (1 núcleo) ou superior.<br>2. <b>Memória RAM:</b> Mínimo de 2 GB (4 GB recomendados).<br>3. <b>Sistema Operativo:</b> Windows 7 SP1 ou superior.<br>4. <i>Nota para MiniPC:</i> Se usar arquitetura com MiniPC auxiliar (para PDVs que não usam Windows), a recomendação é CPU Dual-Core (1.5GHz), 4GB de RAM e Windows Embedded POSready 7."
+  },
+  {
+    "perguntas": [
+      "modelos de integracao",
+      "integracao express",
+      "full integration sem telas",
+      "comandos basicos"
+    ],
+    "resposta": "<b>[Estratégias de Integração com o PDV]</b><br><br><b>Modelos Disponíveis:</b><br>1. <b>Integração Express:</b> A mais rápida. Usa apenas 4 comandos básicos: Inicialização (<code>#I#</code>), Fechamento (<code>#E#</code>), Cobrança (<code>#C#</code>) e Backoffice (<code>#G#</code>), deixando as telas visuais por conta do Connector.<br>2. <b>Integração Completa (Full):</b> Permite usar todos os comandos individualmente ocultando totalmente as telas nativas do Cashlogy.<br>3. <b>Integração Avançada:</b> O programador personaliza os fluxos e decide se exibe ou não as telas para cada função."
+  },
+  {
+    "perguntas": [
+      "formato de valores monetarios",
+      "enviar valor centavos",
+      "enviar dinheiro comando"
+    ],
+    "resposta": "<b>[Regra de Formatação de Valores Monetários]</b><br><br><b>Atenção ao Programar:</b><br>1. Todos os valores de dinheiro nos comandos devem ser enviados sempre na <b>menor unidade da moeda corrente</b> (em centavos).<br>2. <i>Exemplo prático:</i> Para realizar uma cobrança de € 10,00 (ou R$ 10,00), o valor que deve ser enviado no parâmetro do comando é <code>1000</code>."
+  },
+  {
+    "perguntas": [
+      "comando inicializacao",
+      "comando i",
+      "testar hardware ao abrir",
+      "quanto tempo demora inicializar"
+    ],
+    "resposta": "<b>[Comando de Inicialização - #I#]</b><br><br><b>Detalhes Técnicos:</b><br>1. Este comando inicia a comunicação com a máquina e faz o autoteste de hardware. Deve ser executado <b>apenas uma vez</b> ao abrir o PDV.<br>2. <b>Tempo de resposta:</b> O processo de testes do Cashlogy leva aproximadamente <b>um minuto</b> para responder.<br>3. <b>Retorno de Sucesso:</b> <code>#0#x.yy#</code> (onde x.yy é a versão do protocolo, ex: 2.01).<br>4. <b>Retorno de Erro:</b> <code>#ER:GENERIC#2.01#</code>."
+  },
+  {
+    "perguntas": [
+      "cobranca automatica",
+      "confirmacao comando c",
+      "parametro g cobranca"
+    ],
+    "resposta": "<b>[Modos do Comando de Cobrança - #C#]</b><br><br><b>Diferença dos Parâmetros:</b><br>1. O comportamento é definido pelo parâmetro <b>'g'</b> do comando.<br>2. <b>Cobrança Automática (g = 0):</b> O Connector encerra a operação assim que o valor inserido for igual ou maior que o solicitado, devolvendo o troco automaticamente.<br>3. <b>Cobrança com Confirmação (g = 1):</b> A tela exibe o botão 'ACEITAR'. O processo aguarda que o operador clique no botão para finalizar, mesmo que o cliente já tenha inserido o valor total."
+  },
+  {
+    "perguntas": [
+      "codigos de erro connector",
+      "significado wr level",
+      "erro busy",
+      "erro illegal",
+      "wr cancel"
+    ],
+    "resposta": "<b>[Principais Códigos de Retorno e Erros]</b><br><br><b>Dicionário de Erros:</b><br>1. <code>#0#</code>: Execução bem-sucedida, sem erros.<br>2. <code>#WR:LEVEL#</code>: Aviso de que moedas ou notas atingiram o limite crítico (quase cheio/vazio), mas a máquina continua a operar.<br>3. <code>#WR:CANCEL#</code>: O utilizador cancelou a operação manualmente na tela.<br>4. <code>#ER:BUSY#</code>: Uma nova ordem foi enviada antes do comando anterior terminar.<br>5. <code>#ER:ILLEGAL#</code>: O comando não pode ser executado no estado atual (ex: cobrar sem antes inicializar)."
+  },
+  {
+    "perguntas": [
+      "adicionar troco sem tela",
+      "fundo de caixa avancado",
+      "comando a",
+      "comando j parar"
+    ],
+    "resposta": "<b>[Adicionar Troco em Modo Oculto (Sem Telas)]</b><br><br><b>Fluxo para o Desenvolvedor:</b><br>1. Envie o comando avançado <code>#A#2#</code> para abrir a admissão de moedas/notas sem exibir o layout do Cashlogy.<br>2. O software do PDV deve consultar periodicamente (a cada 200-250ms) o comando <code>#Q#</code> para ler o valor acumulado que está a entrar.<br>3. Para finalizar o processo, disponibilize um botão na sua interface que envie o comando <code>#J#</code> (parar aceitação)."
+  },
+  {
+    "perguntas": [
+      "esvaziar stacker",
+      "remover notas cofre",
+      "comando s",
+      "contabilidade eletronica notas"
+    ],
+    "resposta": "<b>[Esvaziar Stacker / Gaveta de Notas - #S#]</b><br><br><b>Importante:</b><br>1. Se o operador retirar as notas do Stacker sem enviar o comando <code>#S#</code>, a quantidade <b>não será subtraída da contabilidade eletrónica</b>.<br>2. Se o contador lógico ultrapassar a capacidade física teórica, a máquina trava por erro de capacidade.<br>3. Ao rodar no modo sem telas (<code>#S#2#</code>), o Connector fica em estado <code>BUSY</code> (Ocupado) e só responde quando detetar fisicamente que o Stacker foi removido e reinserido."
+  },
+  {
+    "perguntas": [
+      "gerenciamento socket tcp",
+      "reconexao automatica",
+      "perda de conexao cashlogy"
+    ],
+    "resposta": "<b>[Gestão da Conexão Socket TCP/IP]</b><br><br><b>Boa Prática de Programação:</b><br>1. O manual recomenda **manter a conexão do socket sempre ativa** durante todo o expediente do PDV.<br>2. Implemente uma rotina de <b>reconexão automática</b> no seu código: se o PDV detetar uma quebra no socket, deve aguardar de 1 a 2 segundos e tentar restabelecer a ligação com o IP do Cashlogy Connector imediatamente."
+  },
+
+  {
+    "perguntas": [
+      "manutencao preventiva",
+      "limpeza periodica",
+      "tabela de manutencao",
+      "limpar sensores",
+      "frequencia de limpeza"
+    ],
+    "resposta": "<b>[Tabela de Manutenção Preventiva e Limpeza]</b><br><br>Para garantir o funcionamento correto do Cashlogy, siga os prazos recomendados pelo fabricante:<br>• <b>A cada 15 dias (Operador):</b> Limpeza da entrada bulk (moedas), módulo de leitura de notas e sensores, recicladores, Stacker (transporte) e TR1-TR4 utilizando <b>ar comprimido não inflamável</b> e um paço húmido com água ou álcool.<br>• <b>Módulo de moedas:</b> Esvaziar e limpar o disco a cada 15 dias.<br>• <b>Anual (Técnico):</b> Revisão completa interna por pessoal autorizado."
+  },
+  {
+    "perguntas": [
+      "erro de alimentacao",
+      "fonte de alimentacao",
+      "maquina nao liga",
+      "leds apagados",
+      "trocar fonte"
+    ],
+    "resposta": "<b>[Diagnóstico: Falha na Fonte de Alimentação]</b><br><br>Se o equipamento não ligar ou apresentar interrupções de energia:<br>1. Verifique se o cabo de alimentação principal está conectado firmemente à tomada e ao conector traseiro do Cashlogy.<br>2. Verifique se o interruptor geral está na posição ligado (I).<br>3. Caso as tensões internas estejam incorretas ou oscilando, o manual técnico determina: <i>Si el error persistiera, será necesario cambiar la fuente de alimentación completa.</i>"
+  },
+  {
+    "perguntas": [
+      "limpar entrada bulk",
+      "limpeza moedas",
+      "bulk entrada",
+      "limpar modulo moedas"
+    ],
+    "resposta": "<b>[Procedimento: Limpeza da Entrada Bulk de Moedas]</b><br><br><b>Passo a passo recomendado a cada 15 dias:</b><br>1. Desligue o equipamento por segurança.<br>2. Remova resíduos visíveis ou objetos estranhos deixados na entrada bulk de moedas.<br>3. Utilize jatos de <b>ar comprimido não inflamável</b> para remover a poeira acumulada nos canais de passagem.<br>4. Passe um pano levemente umedecido para limpar os sensores ópticos superficiais do funil de entrada."
+  },
+  {
+    "perguntas": [
+      "limpar modulo leitura",
+      "limpeza modulo notas",
+      "limpar prismas opticos",
+      "sensores de notas"
+    ],
+    "resposta": "<b>[Procedimento: Limpeza do Módulo de Leitura de Notas]</b><br><br><b>Passo a passo para evitar rejeição de notas:</b><br>1. Abra o módulo de notas utilizando as travas amarelas de liberação.<br>2. Aplique jatos de <b>ar comprimido não inflamável</b> para retirar o pó de papel acumulado nas lentes.<br>3. Limpe cuidadosamente os sensores e prismas utilizando um <b>pano húmido com água ou mistura de água e álcool</b>.<br>4. Certifique-se de que o módulo está completamente seco antes de fechá-lo e travá-lo."
+  },
+  {
+    "perguntas": [
+      "modulo de transporte",
+      "limpar tr1",
+      "limpar tr2",
+      "limpar tr3",
+      "limpar tr4",
+      "limpeza correias"
+    ],
+    "resposta": "<b>[Procedimento: Limpeza das Correias de Transporte (TR1 a TR4)]</b><br><br>As correias e guias de transporte de notas devem ser limpas para evitar atolamentos frequentes:<br>1. Acesse as seções TR1, TR2, TR3 e TR4 abrindo as comportas conforme indicado no manual.<br>2. Use <b>ar comprimido</b> para limpar as engrenagens e caminhos.<br>3. Com um pano levemente humedecido em solução de água/álcool, limpe a superfície das correias de borracha para remover a gordura deixada pelo manuseio das notas."
+  },
+  {
+    "perguntas": [
+      "problema no stacker",
+      "stacker movil",
+      "limpar gaveta",
+      "limpar transporte stacker"
+    ],
+    "resposta": "<b>[Procedimento: Limpeza e Manutenção do Stacker / Gaveta]</b><br><br>O Stacker móvel exige cuidados periódicos para manter o empilhamento correto das notas de cofre:<br>1. Remova o Stacker do compartimento interno do Cashlogy.<br>2. Utilize <b>ar comprimido não inflamável</b> nas conexões traseiras e guias mecânicas móveis.<br>3. Verifique se não há fragmentos de notas rasgadas presos nos roletes internos.<br>4. Insira novamente o módulo garantindo que o clique mecânico de travamento ocorra firmemente."
+  },
+  {
+    "perguntas": [
+      "rejeicao de moedas",
+      "moeda nao entra",
+      "devolvendo moedas",
+      "limpar disco moedas"
+    ],
+    "resposta": "<b>[Resolução de Problemas: Rejeição Constante de Moedas]</b><br><br>Se as moedas válidas estão sendo devolvidas sem contagem:<br>1. Verifique se o canal de validação não está obstruído por moedas deformadas ou objetos (como fitas ou papéis).<br>2. Limpe o disco seletor acumulador de moedas usando ar comprimido.<br>3. Resíduos acumulados no módulo de leitura de moedas podem impedir a leitura magnética/óptica. Faça a limpeza com um pano seco ou levemente umedecido."
+  },
+  {
+    "perguntas": [
+      "rejeicao de notas",
+      "nota volta",
+      "nao aceita notas",
+      "nota recusada"
+    ],
+    "resposta": "<b>[Resolução de Problemas: Rejeição Constante de Notas]</b><br><br>Quando o validador recusa notas repetidamente:<br>1. Verifique o estado físico da nota (notas muito desgastadas, rasgadas, úmidas ou com fitas adesivas serão rejeitadas por segurança).<br>2. Sensores ópticos sujos geram falsos positivos de fraude. Realize a limpeza dos sensores e prismas conforme o <b>Anexo 1 do Manual Técnico</b> usando pano umedecido em água/álcool.<br>3. Certifique-se de que as notas inseridas correspondem às denominações configuradas na licença do seu Connector."
+  },
+  {
+    "perguntas": [
+      "erros de hardware",
+      "codigo de erro",
+      "trava mecanica",
+      "sensor bloqueado"
+    ],
+    "resposta": "<b>[Guia de Diagnóstico de Erros de Hardware]</b><br><br>Se a máquina parar e emitir avisos luminosos ou códigos de falha:<br>1. Abra o compartimento afetado e use o fluxo visual para inspecionar travas soltas ou módulos desalinhados.<br>2. Verifique se os cabos de comunicação de dados (barramento interno) não foram desconectados acidentalmente durante a remoção de um atolamento.<br>3. Se um sensor continuar acusando bloqueio mesmo após a limpeza com ar comprimido, reinicie o Cashlogy para recalibrar as leituras ópticas em zero."
+  },
+
+  {
+    "perguntas": [
+      "iniciar aceitacao moedas",
+      "comando i moedas",
+      "habilitar moedas",
+      "comando i"
+    ],
+    "resposta": "<b>[Comando: Iniciar Aceitação de Moedas - #I#]</b><br><br><b>Funcionamento Técnico:</b><br>1. O comando <code>#I#</code> ativa o validador de moedas para que o hardware comece a receber os valores fisicamente.<br>2. <b>Boa prática:</b> O software de automação deve consultar periodicamente (a cada 200-250ms) o comando <code>#Q#</code> para ler o valor acumulado que está a entrar.<br>3. Para finalizar o processo de receção com segurança, disponibilize um botão na interface do PDV que envie o comando <code>#J#</code> (parar aceitação)."
+  },
+  {
+    "perguntas": [
+      "remover notas cofre",
+      "comando s",
+      "contabilidade eletronica notas"
+    ],
+    "resposta": "<b>[Comando: Esvaziar Stacker / Gaveta de Notas - #S#]</b><br><br><b>Regras Importantes:</b><br>1. Se o operador retirar as notas do Stacker sem enviar o comando <code>#S#</code>, a quantidade <b>não será subtraída da contabilidade eletrónica interna</b> do equipamento.<br>2. Se o contador lógico ultrapassar a capacidade física teórica, a máquina trava por erro de transbordo.<br>3. Ao rodar no modo sem telas (<code>#S#2#</code>), o Connector fica em estado <code>BUSY</code> (Ocupado) e só responde quando detetar fisicamente que o Stacker foi removido e reinserido."
+  },
+  {
+    "perguntas": [
+      "perda de conexao cashlogy",
+      "reconexao automatica",
+      "socket tcp caido"
+    ],
+    "resposta": "<b>[Gestão da Conexão Socket TCP/IP]</b><br><br><b>Diretrizes do Manual Técnico:</b><br>1. O manual recomenda veementemente **manter a conexão do socket TCP sempre ativa** durante todo o expediente do ponto de venda.<br>2. Se houver queda de energia ou desconexão da rede, implemente uma rotina de <i>reconexão automática</i> no seu software que tente restabelecer o canal com o IP do Connector a cada 5 segundos.<br>3. Não envie comandos em massa sem aguardar o retorno da string anterior para evitar estouro de buffer no socket."
+  },
+  {
+    "perguntas": [
+      "como esvaziar moedas",
+      "comando e moedas",
+      "esvaziamento total moedas",
+      "baleamento moedas"
+    ],
+    "resposta": "<b>[Comando: Esvaziamento de Moedas - #E#]</b><br><br><b>Procedimento Técnico:</b><br>1. O comando <code>#E#</code> inicia o processo físico de ejeção controlada das moedas armazenadas nos hoppers/recicladores.<br>2. Pode ser configurado para esvaziamento total ou parcial por denominação.<br>3. <b>Alerta de Segurança:</b> Certifique-se de que a gaveta ou copo recetor de moedas está posicionado corretamente antes de disparar o comando, pois o hardware enviará as moedas de forma contínua até que o sensor de nível acuse 'vazio'."
+  },
+  {
+    "perguntas": [
+      "niveis de armazenamento",
+      "comando m",
+      "saber quantidade de moedas",
+      "consultar estoque notas"
+    ],
+    "resposta": "<b>[Comando: Consulta de Níveis de Inventário - #M#]</b><br><br><b>Aplicação do Comando:</b><br>1. O comando <code>#M#</code> retorna ao sistema o estado exato do inventário de moedas e notas dentro dos recicladores.<br>2. A resposta vem formatada separando os valores por moedas (Hoppers) e notas (Recicladores compactos).<br>3. Utilize este comando no fecho de caixa e na abertura do dia para validar se o fundo de maneio bate com os relatórios gerenciais do PDV."
+  },
+  {
+    "perguntas": [
+      "como reiniciar cashlogy",
+      "comando y",
+      "reset por software",
+      "recalibrar sensores"
+    ],
+    "resposta": "<b>[Comando: Reset de Hardware por Software - #Y#]</b><br><br><b>Quando Utilizar:</b><br>1. O comando <code>#Y#</code> força a reinicialização lógica do firmware e dos motores do Cashlogy sem a necessidade de puxar o cabo da tomada.<br>2. É ideal para limpar estados de erro voláteis causados por pequenas obstruções de sensores ópticos que já foram limpas com ar comprimido.<br>3. <b>Nota:</b> Após o envio do <code>#Y#</code>, aguarde o retorno do estado do Connector voltar para <code>READY</code> antes de enviar novos comandos de venda."
+  },
+  {
+    "perguntas": [
+      "atolamento tr1",
+      "atolamento tr2",
+      "atolamento tr3",
+      "atolamento tr4",
+      "nota presa correia"
+    ],
+    "resposta": "<b>[Resolução de Problemas: Nota Presa no Transporte (TR1 - TR4)]</b><br><br><b>Procedimento de Extração:</b><br>1. Desligue o interruptor geral do equipamento.<br>2. Abra a comporta superior ou lateral correspondente à seção TR indicada pelo diagnóstico visual.<br>3. <b>Nunca use objetos pontiagudos</b> (como pinças ou chaves de fendas) para puxar a nota, pois isso rasga as correias de borracha.<br>4. Gire manualmente as engrenagens plásticas no sentido do fluxo para que a nota saia de forma natural e sem rasgar."
+  },
+  {
+    "perguntas": [
+      "moeda presa no disco",
+      "hopper travado",
+      "bloqueio modulo moedas",
+      "erro esvaziamento"
+    ],
+    "resposta": "<b>[Resolução de Problemas: Bloqueio Mecânico nos Recicladores de Moedas]</b><br><br>Se o motor de moedas fizer ruído de esforço ou acusar erro mecânico:<br>1. Desligue a máquina e puxe o módulo de moedas para fora pelas guias metálicas.<br>2. Verifique se há moedas tortas, amassadas ou objetos estranhos (grampos, clipes) travando o disco seletor.<br>3. Remova o objeto manualmente girando o disco no sentido inverso.<br>4. Limpe o fundo do prato acumulador para remover o zinco e fuligem que se soltam das moedas com o tempo."
+  },
+  {
+    "perguntas": [
+      "configurar ip cashlogy",
+      "mudar ip connector",
+      "porta socket tcp",
+      "conexao de rede"
+    ],
+    "resposta": "<b>[Configuração de Rede e Comunicação TCP/IP]</b><br><br><b>Parâmetros Padrão de Fábrica:</b><br>• O Cashlogy Connector comunica-se por padrão através do protocolo <b>TCP/IP</b> utilizando sockets.<br>• Certifique-se de que o IP configurado no arquivo de inicialização da sua aplicação aponta exatamente para a máquina onde o serviço do Connector está rodando (geralmente <code>127.0.0.1</code> se estiver no mesmo PC, ou o IP fixo da rede local).<br>• Verifique nas regras do <b>Firewall do Windows</b> se a porta de comunicação do socket TCP está totalmente liberada para tráfego de entrada e saída."
+  },
+  {
+    "perguntas": [
+      "luz vermelha piscando",
+      "maquina piscando vermelho",
+      "led vermelho aceso",
+      "erro piscando",
+      "aviso luminoso vermelho"
+    ],
+    "resposta": "<b>[Guia Visual: Led Vermelho Piscando ou Aceso]</b><br><br><b>O que significa:</b> O Cashlogy pisca em vermelho para indicar que há um bloqueio físico (papel ou moeda presa) ou que um módulo interno importante está totalmente aberto ou desencaixado.<br><br><b>Como resolver:</b><br>1. Verifique na tela do computador qual área é indicada (Notas ou Moedas).<br>2. Abra a tampa externa e certifique-se de que todas as travas plásticas amarelas estão totalmente fechadas e firmes.<br>3. Se houver alguma nota ou moeda visível no caminho, retire-a com cuidado e feche o compartimento até ouvir o 'clique' mecânico."
+  },
+  {
+    "perguntas": [
+      "maquina travou com dinheiro",
+      "dinheiro ficou preso",
+      "nota nao sai e nao entra",
+      "maquina engoliu a nota",
+      "nota presa no meio"
+    ],
+    "resposta": "<b>[Resolução: Nota Engatada ou Presa no Transporte]</b><br><br>Se uma nota ficar presa no meio do caminho das correias (TR1 a TR4):<br>1. <b>Desligue a máquina da tomada</b> imediatamente para evitar que os motores puxem e rasguem o dinheiro.<br>2. Abra as tampas de acesso usando as travas amarelas conforme o local indicado.<br>3. <b>ATENÇÃO: Nunca puxe a nota usando objetos pontiagudos</b> (como chaves ou pinças), pois isso rasga as correias de borracha.<br>4. Gire manualmente as engrenagens plásticas para que a nota ande e saia sozinha, sem forçar."
+  },
+  {
+    "perguntas": [
+      "moeda ficou entalada",
+      "moeda travou tudo",
+      "barulho de motor forçando",
+      "moedas presas",
+      "moeda nao cai"
+    ],
+    "resposta": "<b>[Resolução: Bloqueio no Módulo de Moedas / Hopper]</b><br><br>Se o motor de moedas fizer um barulho estranho (como se estivesse fazendo muita força) ou travar:<br>1. Desligue o equipamento no interruptor.<br>2. Puxe o prato de moedas para fora usando as guias metálicas laterais.<br>3. Procure por moedas tortas, amassadas, clipes, grampos ou sujeira grossa travando o prato giratório.<br>4. Gire o prato com as mãos no sentido inverso para desprender o objeto e limpe o fundo do compartimento."
+  },
+  {
+    "perguntas": [
+      "como esvaziar o cofre",
+      "retirar dinheiro do cofre",
+      "como tirar as notas guardadas",
+      "limpar a gaveta de notas",
+      "tirar dinheiro da gaveta"
+    ],
+    "resposta": "<b>[Procedimento: Retirar Notas do Cofre / Stacker Móvel]</b><br><br>Para recolher o dinheiro guardado com segurança e não descontrolar o sistema eletrônico:<br>1. Acesse o painel de gerenciamento do seu sistema no computador e selecione a opção de esvaziamento.<br>2. Abra a porta inferior da máquina e puxe a gaveta (Stacker móvel) usando a alça plástica.<br>3. Retire as notas guardadas.<br>4. **IMPORTANTE:** Coloque a gaveta vazia de volta e certifique-se de que ela deu o clique de encaixe. O sistema precisa registrar fisicamente que a gaveta foi removida e reinserida para zerar o contador interno lógicos de notas."
+  },
+  {
+    "perguntas": [
+      "maquina rejeita tudo",
+      "nao aceita nenhuma nota",
+      "nota volta direto",
+      "nota limpa nao entra"
+    ],
+    "resposta": "<b>[Problema: Rejeição Constante de Notas Válidas]</b><br><br>Se notas novas e limpas estão voltando sem que a máquina faça a leitura:<br>1. O pó que solta do papel-moeda se acumula nos sensores ópticos e bloqueia a leitura do laser.<br>2. Abra o módulo de notas usando as alças amarelas.<br>3. Use uma bombinha de <b>ar comprimido</b> para soprar a poeira das lentes e sensores.<br>4. Passe um pano de microfibra levemente umedecido (com água ou uma gota de álcool) nos sensores e prismas de vidro superiores e inferiores. Aguarde secar antes de fechar."
+  },
+  {
+    "perguntas": [
+      "moeda volta direto",
+      "nao aceita moedas",
+      "moeda cai na sobra",
+      "rejeitando moedas"
+    ],
+    "resposta": "<b>[Problema: Rejeição Constante de Moedas Válidas]</b><br><br>Se as moedas são jogadas na bandeja de devolução imediatamente ao entrar:<br>1. Verifique se não há sujeira pegajosa (como resquício de refrigerante ou fita adesiva) no funil de entrada (Bulk).<br>2. Limpe a calha interna de moedas soprando ar comprimido para remover o pó metálico.<br>3. Se o canal de validação magnética estiver muito sujo de fuligem, passe um pano seco para limpar os sensores ópticos de passagem."
+  },
+  {
+    "perguntas": [
+      "como limpar por fora",
+      "limpeza do caixa externo",
+      "limpar plastico externo",
+      "produtos de limpeza"
+    ],
+    "resposta": "<b>[Manutenção: Limpeza Externa do Equipamento]</b><br><br>Para limpar a carcaça do Cashlogy de forma segura:<br>1. Nunca borrife água, álcool ou produtos de limpeza diretamente nas fendas da máquina.<br>2. Use um pano macio levemente umedecido com água e sabão neutro para limpar a parte plástica externa e a bandeja de moedas.<br>3. **PROIBIDO:** Nunca use solventes abrasivos, palhas de aço ou produtos químicos fortes, pois eles danificam os sensores e mancham o visor receptor."
+  },
+  {
+    "perguntas": [
+      "computador nao acha a maquina",
+      "erro de comunicacao",
+      "cabo solto",
+      "erro de conexao",
+      "maquina nao responde"
+    ],
+    "resposta": "<b>[Suporte: Erro de Comunicação ou Conexão Caída]</b><br><br>Se o seu programa de vendas disser que o Cashlogy está desconectado:<br>1. Verifique se o cabo de rede (Ethernet) ou cabo USB na parte traseira da máquina não foi puxado ou afrouxado durante a limpeza.<br>2. Certifique-se de que o computador do caixa está na mesma rede IP da máquina.<br>3. Verifique se o programa 'Cashlogy Connector' está aberto e rodando em segundo plano perto do relógio do Windows."
+  },
+  {
+    "perguntas": [
+      "maquina totalmente apagada",
+      "nao liga nada",
+      "sem energia",
+      "morreu nao liga"
+    ],
+    "resposta": "<b>[Problema: Equipamento Completamente Apagado]</b><br><br>Se nenhuma luz acende e a máquina parece totalmente desligada:<br>1. Verifique se o cabo preto de energia está bem firme na tomada da parede e na entrada traseira do equipamento.<br>2. Procure pelo botão liga/desliga geral na parte de trás da máquina e confirme se ele está na posição ligado <b>(I)</b>.<br>3. Se a tomada estiver funcionando normalmente e mesmo assim não ligar, feche a máquina e chame o suporte para avaliar se a fonte de alimentação interna queimou."
+  },
+  {
+    "perguntas": [
+      "o que limpar a cada 15 dias",
+      "rotina do operador",
+      "limpeza obrigatoria"
+    ],
+    "resposta": "<b>[Cronograma: Limpeza Obrigatória a cada 15 Dias (Operador)]</b><br><br>O manual do fabricante exige que quem opera a máquina faça a limpeza a cada 15 dias para evitar paradas mecânicas. Limpe:<br>• A entrada de moedas (Bulk) soprando ar comprimido.<br>• Os sensores do leitor de notas com pano úmido.<br>• As correias de transporte plásticas abertas.<br>• O prato giratório do módulo acumulador de moedas."
+  },
+  {
+    "perguntas": [
+      "gaveta cheia trava",
+      "erro de transbordo",
+      "limite de moedas",
+      "aviso de capacidade"
+    ],
+    "resposta": "<b>[Aviso: Capacidade Máxima e Erro de Transbordo]</b><br><br><b>Por que acontece:</b> O Cashlogy controla eletronicamente a quantidade exata de moedas e notas dentro dele. Se você continuar vendendo sem esvaziar os compartimentos quando o sistema avisa, a máquina trava por segurança física para não amassar o dinheiro lá dentro.<br><br><b>Como evitar:</b> Faça a retirada do excesso de dinheiro (sangria) pelo painel do seu software de vendas sempre que o sistema avisar que o limite operacional está próximo."
+  }
+
+]
+
+
