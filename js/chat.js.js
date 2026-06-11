@@ -1,56 +1,88 @@
 $(document).ready(function () {
-
   const $messages = $(".messages");
   const $input = $("#msg_input");
   const $send = $("#send_button");
 
-  // Armazena as respostas carregadas na memória
   let respostas = []; 
+  let categoriaAtiva = null; 
 
   // ===== CARREGAR RESPOSTAS DO ARQUIVO JSON =====
-  // Tentativa A: Carrega do caminho padrão relativo ao index.html
-  fetch("js/respostas.json")
-    .then(res => {
-      if (!res.ok) throw new Error("Caminho padrão não encontrado, tentando raiz.");
-      return res.json();
-    })
-    .then(data => {
-      respostas = data;
-      console.log("Catálogo carregado com sucesso via rota pública! Itens:", respostas.length);
-    })
-    .catch(() => {
-      // Tentativa B: Fallback de segurança caso esteja na raiz devido às chamadas PHP
-      fetch("respostas.json")
-        .then(res => res.json())
-        .then(data => {
-          respostas = data;
-          console.log("Catálogo carregado via rota de fallback! Itens:", respostas.length);
-        })
-        .catch(err => console.error("Erro crítico ao localizar o ficheiro respostas.json:", err));
-    });
+  function carregarRespostas() {
+    fetch("js/respostas.json")
+      .then(res => {
+        if (!res.ok) throw new Error();
+        return res.json();
+      })
+      .then(data => {
+        respostas = data;
+        console.log("👉 Banco unificado carregado! Itens salvos:", respostas.length);
+      })
+      .catch(() => {
+        fetch("respostas.json")
+          .then(res => res.json())
+          .then(data => {
+            respostas = data;
+            console.log("👉 Banco unificado carregado da raiz!");
+          })
+          .catch(err => console.error("❌ ERRO: O arquivo respostas.json não foi encontrado.", err));
+      });
+  }
 
-  // ===== EVENTOS DO CHAT =====
-  $send.on("click", sendMessage);
-  $input.on("keypress", function (e) {
-    if (e.which === 13) sendMessage();
+  carregarRespostas();
+
+  // ===== FUNÇÃO: REINICIAR CONVERSA =====
+  function reiniciarConversa() {
+    $messages.empty();
+    categoriaAtiva = null;
+    $(".quick_btn").css({ "border": "none", "opacity": "1" });
+    $input.val("");
+    
+    addMessage("Conversa reiniciada! Por favor, <b>selecione uma nova categoria nos botões abaixo</b> para começarmos.", "left");
+  }
+
+  // Atribui o clique do botão de reset de forma segura
+  $(document).off("click", "#reset_chat_btn").on("click", "#reset_chat_btn", function(e) {
+    e.preventDefault();
+    reiniciarConversa();
   });
 
-  // 🌟 ESCUTA DE CLIQUE CORRIGIDA PARA OS BOTÕES RÁPIDOS
-  $(document).on("click", ".quick_btn", function (e) {
+  // ===== EVENTOS DE ENVIO DE TEXTO (INPUT) =====
+  $send.off("click").on("click", function() {
+    sendMessage();
+  });
+
+  $input.off("keypress").on("keypress", function (e) {
+    if (e.which === 13) {
+      sendMessage();
+    }
+  });
+
+  // ===== EVENTO DE CLIQUE NOS BOTÕES DE CATEGORIA =====
+  $(document).off("click", ".quick_btn").on("click", ".quick_btn", function (e) {
     e.preventDefault();
     
-    const termoMapeado = $(this).attr("data-search"); // Ex: "configurar simulador cashlogy"
-    const textoExibido = $(this).text();             // Ex: "⚙️ Instalar maquina virtual"
+    const textoExibido = $(this).text();             
+    const categoriaBotao = $(this).attr("data-categoria"); 
 
-    if (!termoMapeado) return;
+    if (!categoriaBotao) return;
 
-    // 1. Imprime imediatamente o balão do utilizador no chat com o nome do botão
-    addMessage(textoExibido, "right"); 
+    // Atualiza a categoria na memória (permite trocar de uma para outra direto)
+    categoriaAtiva = categoriaBotao;
+
+    // Aplica o destaque visual
+    $(".quick_btn").css({ "border": "none", "opacity": "0.5" });
+    $(this).css({ "border": "2px solid #00ff00", "opacity": "1" });
+
+    // Envia o balão de escolha do usuário
+    addMessage(`Escolhi a categoria: ${textoExibido}`, "right"); 
     
-    // 2. Dispara o robô para ler a string exata no matcher
-    botReply(termoMapeado); 
+    // O robô responde confirmando a mudança de sistema
+    setTimeout(() => {
+      addMessage(`Ótimo! Você selecionou o sistema <b>${categoriaAtiva.toUpperCase()}</b>. Qual seria sua dúvida sobre ele hoje?`, "left");
+    }, 200);
   });
 
+  // Função para processar o envio do campo de texto
   function sendMessage() {
     const text = $input.val().trim();
     if (!text) return;
@@ -58,36 +90,42 @@ $(document).ready(function () {
     addMessage(text, "right");
     $input.val("");
 
+    // Dispara a pesquisa no banco
     setTimeout(() => botReply(text), 200);
   }
 
   function addMessage(text, side) {
-    const avatar = side === "left"
-      ? '<div class="avatar bot"></div>'
-      : '<div class="avatar user"></div>';
-
+    const avatar = side === "left" ? '<div class="avatar bot"></div>' : '<div class="avatar user"></div>';
+    
     $messages.append(`
       <li class="message ${side}">
         ${avatar}
         <div class="text_wrapper">${text}</div>
       </li>
     `);
-
-    // Rolagem automática para o fim da conversa
-    $messages.animate({ scrollTop: $messages[0].scrollHeight }, 200);
+    
+    if ($messages[0]) {
+      $messages.animate({ scrollTop: $messages[0].scrollHeight }, 200);
+    }
   }
 
+  // Busca e exibe a resposta técnica correspondente
   function botReply(textoUsuario) {
+    if (!categoriaAtiva) {
+      addMessage("⚠️ Por favor, escolha primeiro uma das categorias nos botões acima (como o botão <b>⚙️ CIMA</b>) antes de digitar.", "left");
+      return;
+    }
+
     if (typeof encontrarResposta === "function") {
-      let resposta = encontrarResposta(textoUsuario, respostas);
+      let resposta = encontrarResposta(textoUsuario, respostas, categoriaAtiva);
 
       if (resposta) {
         addMessage(resposta, "left");
       } else {
-        addMessage("🤔 Não encontrei uma instrução exata para esse caso no sistema.", "left");
+        addMessage(`🤔 Não encontrei uma instrução exata para a dúvida <i>"${textoUsuario}"</i> na categoria <b>${categoriaAtiva.toUpperCase()}</b>.`, "left");
       }
     } else {
-      console.error("Erro: A função 'encontrarResposta' não está disponível no escopo do matcher.js");
+      console.error("Erro: A função 'encontrarResposta' não foi encontrada no matcher.js.js");
     }
   }
 });

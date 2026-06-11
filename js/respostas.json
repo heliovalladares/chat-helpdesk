@@ -1,5 +1,222 @@
 [
+
   {
+    "categoria": "cima",
+    "perguntas": [
+      "restaurar imagem macrium reflect",
+      "recuperar sistema cofre pendrive",
+      "erro de boot cofre",
+      "reinstalar sistema sdm100",
+      "procurar arquivo de imagem macrium"
+    ],
+    "resposta": "<b>[Procedimento: Restauração do Sistema via Macrium Reflect]</b><br><br>Siga as instruções abaixo para realizar a recuperação completa do sistema do cofre utilizando um pendrive ou HD externo:<br><br><b>Passo a Passo:</b><br>1. Conecte o dispositivo de boot e inicie o computador pelo pendrive para carregar o ambiente de recuperação[cite: 4].<br>2. Aguarde até que o programa <b>Macrium Reflect</b> seja totalmente carregado na tela[cite: 4].<br>3. Na tela principal, clique na opção <b>Procurar arquivo de imagem</b>[cite: 4].<br>4. Navegue pelas pastas do seu pendrive ou HD externo, localize o arquivo de imagem salvo, selecione-o e clique em OK[cite: 4].<br>5. Com a imagem carregada na tela, clique no link <b>Restaurar</b> para iniciar o processo de recuperação[cite: 4].<br>6. Na janela de mapeamento de discos, clique em <b>Avançar</b> para prosseguir com a restauração das partições[cite: 4].<br>7. Verifique o resumo da restauração na tela seguinte e clique em <b>Concluir</b> para confirmar as opções[cite: 4].<br>8. Um aviso será exibido informando que o disco será sobrescrito. Marque a caixa de seleção de confirmação e clique em <b>Continuar</b>[cite: 4].<br>9. Aguarde a barra de progresso atingir 100% até que o processo de restauração seja totalmente concluído[cite: 4]."
+  }, 
+
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "atualizar validador bv5000",
+      "atualizacao firmware bv5000",
+      "atualizar template bv5000",
+      "conectar programa bv5000",
+      "erro validador de cedulas"
+    ],
+    "resposta": "<b>[Procedimento: Atualização do Validador BV5000]</b><br><br>Siga as instruções abaixo para realizar a atualização de Firmware e Templates do validador:<br><br><b>Parte 1: Conexão e Inicialização</b><br>1. Utilize o cabo apropriado (ponta USB x Mini USB) para conectar o computador ao Validador BV5000[cite: 3].<br>2. Localize e abra o programa <b>BV5000-Service</b> em sua área de trabalho[cite: 3].<br>3. Na tela inicial do programa, clique no botão <b>Connect</b> na seção \"Machine\" e confirme se o status muda para conectado no rodapé da tela[cite: 3].<br>4. No menu lateral esquerdo, clique na aba <b>Update</b> (apenas as abas Firmware e Template serão utilizadas)[cite: 3].<br><br><b>Parte 2: Atualização do Firmware</b><br>1. Acesse a aba <b>Firmware</b> e observe a versão atual do equipamento[cite: 3].<br>2. Selecione a versão mais recente na lista e clique em <b>Update firmware</b>[cite: 3].<br>3. Na tela seguinte, clique em <b>Start</b> para iniciar a instalação e, ao finalizar, clique em <b>Exit</b> para retornar[cite: 3].<br><br><b>Parte 3: Atualização do Template (Cédulas)</b><br>1. Clique na aba <b>Template</b> e, em seguida, no botão <b>Load</b> para carregar os arquivos já instalados[cite: 3].<br>2. Na lista de banco de dados inferior (Database Templates list), selecione a versão mais atualizada disponível (ela ficará destacada em vermelho)[cite: 3].<br>3. Clique no botão <b>Update Templates</b> e depois em <b>Start</b> para iniciar o processo[cite: 3].<br>4. Quando a mensagem \"Installation completed\" for exibida, clique em <b>Exit</b>, feche o programa e <b>reinicie o equipamento</b> para aplicar as alterações[cite: 3]."
+  },
+
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "passar imagem sdm100",
+      "gravar imagem cartao memoria cofre",
+      "restaurar imagem disk imager",
+      "excluir particao cartao sdm100",
+      "formatar hd externo sdm100",
+      "criar volume unico cartao sd"
+    ],
+    "resposta": "<b>[Procedimento: Gravação de Imagem no SDM100]</b><br><br>Siga as instruções abaixo para unificar as partições do cartão de memória/HD e gravar a nova imagem do sistema:<br><br><b>Parte 1: Preparação do Cartão/HD (Volume Único)</b><br>1. Conecte o cartão de memória ou HD externo ao computador[cite: 2].<br>2. Clique com o botão direito em <b>Computador</b>, selecione <b>Gerenciar</b> (requer privilégios de administrador)[cite: 2] e vá em <b>Gerenciamento de disco</b>[cite: 2].<br>3. Para cada partição do dispositivo, clique com o botão direito e selecione <b>Excluir volume</b>[cite: 2]. Em seguida, clique no espaço livre restante e selecione <b>Excluir partição</b>[cite: 2].<br>4. Com o disco totalmente não alocado, clique com o botão direito nele e escolha <b>Novo volume simples</b>[cite: 2].<br>5. No assistente, avance definindo o tamanho máximo do disco, atribua uma letra de unidade e conclua a formatação[cite: 2].<br><br><b>Parte 2: Gravação da Imagem com o Disk Imager</b><br>1. Certifique-se de ter instalado o programa de gravação e baixado o arquivo de imagem do sistema[cite: 2].<br>2. Execute o programa <b>Disk Imager</b> com o dispositivo conectado[cite: 2].<br>3. No campo <b>Drives</b>, selecione a letra correspondente à unidade do seu cartão/HD[cite: 2].<br>4. Clique em <b>Restore drive(s) from image...</b>[cite: 2], localize e selecione o arquivo de imagem baixado e clique em <b>Abrir</b>[cite: 2].<br>5. Aguarde a conclusão do processo de gravação antes de remover o dispositivo[cite: 2]."
+  },
+
+  {
+    "categoria": "CIMA",
+    "perguntas": [
+      "alterar orientacao da tela",
+      "mudar tela para horizontal",
+      "script tela sh",
+      "putty tela cofre",
+      "girar tela cofre"
+    ],
+    "resposta": "<b>[Procedimento: Alteração da Orientação da Tela via SSH]</b><br><br>Siga as instruções abaixo para configurar a orientação da tela para o modo horizontal no equipamento:<br><br><b>Passo a Passo:</b><br>1. Execute o programa <b>PuTTY</b> em seu computador.<br>2. Na tela principal, configure os dados de conexão:<br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Host Name (IP Address):</b> <code>192.168.250.2</code><br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Port:</b> <code>7000</code><br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Connection Type:</b> <code>SSH</code><br>3. Clique em <b>Open</b> para iniciar a conexão.<br>4. Quando o terminal solicitar o login, insira as credenciais:<br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Usuário:</b> <code>cimauser</code><br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Senha:</b> <code>IrCD4fKYr1G6RF5431WXIKHYE</code><br>5. No terminal, acesse a pasta principal digitando o comando: <code>cd /home</code><br>6. Execute o script de configuração digitando: <code>./tela.sh</code> e aguarde a conclusão do processo.<br>7. <b>Reinicie o cofre</b> para que as alterações sejam aplicadas e, após o reinício, confirme se a tela foi alterada corretamente para a orientação horizontal."
+  },
+
+  {
+    "categoria": "CIMA",
+    "perguntas": [
+      "alterar impressora padrao",
+      "configurar impressora woosim",
+      "script woosim sh",
+      "putty impressora cofre"
+    ],
+    "resposta": "<b>[Procedimento: Alteração da Impressora Padrão via SSH]</b><br><br>Siga as instruções abaixo para configurar a nova impressora padrão no equipamento:<br><br><b>Passo a Passo:</b><br>1. Execute o programa <b>PuTTY</b> em seu computador.<br>2. Na tela principal, configure os dados de conexão:<br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Host Name (IP Address):</b> <code>192.168.250.2</code><br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Port:</b> <code>7000</code><br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Connection Type:</b> <code>SSH</code><br>3. Clique em <b>Open</b> para iniciar a conexão.<br>4. Quando o terminal solicitar o login, insira as credenciais:<br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Usuário:</b> <code>cimauser</code><br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Senha:</b> <code>IrCD4fKYr1G6RF5431WXIKHYE</code><br>5. No terminal, acesse a pasta principal digitando o comando: <code>cd /home</code><br>6. Execute o script de configuração digitando: <code>./woosim.sh</code> e aguarde a conclusão do processo.<br>7. <b>Reinicie o cofre</b> para que as alterações sejam aplicadas e, após o reinício, realize um teste de impressão para confirmar o funcionamento correto."
+  },
+
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "ativar deposito manual gunnebo",
+      "desativar deposito manual gunnebo",
+      "configurar available dm gunnebo",
+      "deposito manual intelisafe lite speed"
+    ],
+    "resposta": "<b>[Configuração: Depósito Manual - Fabricante Gunnebo]</b><br><br>Procedimento válido para os modelos Intelisafe, LITE e SPEED[cite: 4].<br><br><b>Passo a Passo:</b><br>1. Acesse o cofre via VNC, realize o logoff do usuário 'user' e entre como <b>administrator</b> (Senha: <code>hcm3842</code>)[cite: 4].<br>2. Localize e abra o aplicativo <b>XMLConfigEditor</b> na área de trabalho[cite: 4].<br>3. Vá em File > Open e abra o arquivo <code>C:\\SafeCash-R\\RecyclerConfig.xml</code>[cite: 4].<br>4. Na árvore de diretórios à esquerda, navegue até a opção <b>DM</b>[cite: 4].<br>5. No campo <b>'available'</b>, mude o atributo para <code>true</code> se quiser ativar o depósito manual, ou para <code>false</code> se quiser desativar[cite: 4].<br>6. Clique no ícone do disquete para salvar as configurações e reinicie o cofre[cite: 4]."
+  },
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "ativar deposito manual sdm500",
+      "desativar deposito manual sdm500",
+      "manualdeposit caoswww",
+      "envelopeid mandatory sdm500"
+    ],
+    "resposta": "<b>[Configuração: Depósito Manual - Modelo SDM500 / SDM504]</b><br><br><b>Como realizar o procedimento:</b><br>1. Acesse o sistema <b>CaosWWW</b> e entre no menu <b>Configuração Web</b>[cite: 4].<br>2. Na barra de ferramentas à esquerda, clique em Transações e depois em <b>Opções de Depósito</b>[cite: 4].<br>3. Localize o parâmetro <b>ManualDeposit</b>[cite: 4]:<br>&nbsp;&nbsp;&nbsp;&nbsp;• Para <u>desativar</u>: Selecione a opção <b>'0: Desabilitado'</b>[cite: 4].<br>&nbsp;&nbsp;&nbsp;&nbsp;• Para <u>ativar</u>: Selecione <b>'4: Habilitado com a categoria de seleção'</b> (permite especificar quantidade, documentos e moeda)[cite: 4].<br>4. No campo <b>envelopeIdMandatory</b>, certifique-se de deixar sempre configurado como <b>'1: Habilitado'</b> (torna o ID do envelope obrigatório)[cite: 4].<br>5. Clique em **SALVAR** no topo da página e reinicie o equipamento[cite: 4]."
+  },
+  {
+    "categoria": "CIMA",
+    "perguntas": [
+      "ativar deposito manual sdm100",
+      "desativar deposito manual cima",
+      "configurar fluxo de trabalho sdm100",
+      "adicionar categoria cedulas rejeitadas"
+    ],
+    "resposta": "<b>[Configuração: Depósito Manual - CIMA / SDM100 (Caos 6)]</b><br><br><b>Como realizar o procedimento:</b><br>1. Acesse o ambiente <b>Caosweb</b> usando o navegador através do Citrix e entre em <b>Configurações > Fluxo de Trabalho</b>[cite: 4].<br>2. <b>Para Desativar:</b> Desmarque a caixa de seleção principal do topo chamada 'Depósito Manual' e clique em Salvar (Não precisa reiniciar)[cite: 4].<br>3. <b>Para Ativar:</b> Marque o checkbox 'Depósito Manual'[cite: 4]. Defina a opção 'Requer ID do envelope' como <b>Obrigatório</b>[cite: 4]. Marque a opção 'Habilitar o reset automático...' e selecione o serial correspondente ao equipamento[cite: 4].<br>4. No final da tela, clique no botão <b>'+'</b> para criar a categoria[cite: 4]. Preencha o Nome como <code>Cedulas Rejeitadas</code>, marque a opção <b>'Por montante'</b>, clique em Adicionar e finalize clicando em **SALVAR** no canto direito[cite: 4]."
+  },
+  {
+    "categoria": "minimae",
+    "perguntas": [
+      "desativar deposito manual minimae",
+      "deposito manual cofre mille",
+      "configurar deposito manual catacompany"
+    ],
+    "resposta": "<b>[Suporte: Depósito Manual - Modelos Minimae e MILLE]</b><br><br><b>Informação Operacional:</b><br>1. Nos equipamentos fabricados pela CataCompany (modelos Minimae e MILLE), o recurso de depósito manual já vem **ativado de fábrica** como um parâmetro nativo do sistema[cite: 4].<br>2. Por padrão de arquitetura do software deste fabricante, <u>não é possível</u> desativar ou remover essa função da interface do operador[cite: 4]."
+  },
+
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "ajustar quantidade de recibos sdm500",
+      "mudar vias de impressao sdm500",
+      "configurar comprovante sdm500",
+      "alterar numero de recibos sdm500"
+    ],
+    "resposta": "<b>[Configuração: Quantidade de Recibos - Modelo SDM500]</b><br><br><b>Como realizar o procedimento:</b><br>1. Realize o acesso remoto ao cofre e abra o arquivo de configuração localizado no caminho: <code>C:\\wamp\\www\\PRDM\\config.php</code>.<br>2. Procures pelas linhas de comando que definem as vias de impressão: <code>$vias_deposito</code> (para depósitos) e <code>$vias_recolha</code> (para coletas).<br>3. Altere o valor numérico que está entre aspas para a quantidade de vias desejada pelo cliente (Ex: mudar de '1' para '2').<br>4. Salve as alterações no arquivo de texto e reinicie o cofre para aplicar a nova configuração."
+  },
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "ajustar quantidade de recibos sdm100",
+      "mudar vias de impressao cima",
+      "configurar numero de recibos sdm100",
+      "alterar vias comprovante cima"
+    ],
+    "resposta": "<b>[Configuração: Quantidade de Recibos - Modelo CIMA / SDM100]</b><br><br><b>Como realizar o procedimento:</b><br>1. Acesse o terminal do cofre e abra o navegador de arquivos (File Manager).<br>2. Navegue até o diretório: <code>/opt/Prosegur/cashmanagerprm/data</code>.<br>3. Localize e abra o arquivo chamado <code>prm_config.properties</code> utilizando um editor de texto.<br>4. Procure pela linha de parâmetro: <code>ticket.vias.number=</code>.<br>5. Altere o número final de acordo com a quantidade de vias solicitada pelo cliente.<br>6. Salve o arquivo e realize a reinicialização lógica do cofre para validar a alteração."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "ajustar quantidade de recibos gunnebo",
+      "xmlconfigeditor gunnebo",
+      "recyclerconfig xml gunnebo",
+      "alterar numero de recibos gunnebo"
+    ],
+    "resposta": "<b>[Configuração: Quantidade de Recibos - Fabricante Gunnebo]</b><br><br><b>Como realizar o procedimento:</b><br>1. No ambiente Windows do cofre, execute a ferramenta técnica <b>XMLConfigEditor</b>.<br>2. Através do editor, abra o arquivo de configuração do hardware localizado em: <code>C:\\SafeCash-R\\RecyclerConfig.xml</code>.<br>3. Navegue pela árvore de configurações (Tree) até encontrar a tag/parâmetro <code>number_of_receipts</code>.<br>4. Ajuste o valor numérico do campo conforme a necessidade de vias do cliente.<br>5. Clique no ícone do **disquete** localizado na parte superior da tela do XMLConfigEditor para salvar e, em seguida, reinicie o cofre."
+  },
+  {
+    "categoria": "minimae",
+    "perguntas": [
+      "ajustar quantidade de recibos minimae",
+      "reimprimir recibo minimae",
+      "reimprimir coleta minimae",
+      "vias de impressao cofre mille"
+    ],
+    "resposta": "<b>[Configuração / Suporte: Impressão de Recibos - Modelos Minimae e MILLE]</b><br><br><b>Informação Importante sobre o modelo Catacompany:</b><br>1. Nos cofres Minimae e Mille, <u>não é possível</u> configurar ou ajustar previamente um valor fixo para a quantidade de vias de impressão automática.<br>2. <b>Alternativa para o cliente:</b> Caso necessitem de mais de uma via, um usuário com perfil de <b>Gerente Padrão</b> pode fazer a reimpressão manual de qualquer comprovante diretamente na tela.<br>3. Para fazer isso, o gerente deve acessar o menu do cofre, ir até a opção <b>Relatórios</b> e selecionar <b>Reimprimir Recibo</b> ou <b>Reimprimir Coleta</b> conforme o documento que necessita duplicar."
+  },
+
+{
+    "categoria": "cima",
+    "perguntas": [
+      "erro database linux",
+      "dispositivo offline linux",
+      "limpar cache axis2 linux",
+      "validador offline cime"
+    ],
+    "resposta": "<b>[Resolução: Erro Database / Dispositivo Offline no Linux]</b><br><br>Este procedimento auxilia na validação de erros Database e Dispositivo Offline em cofres CIMA com Caos 6[cite: 2].<br><br><b>Passo a Passo no Linux:</b><br>1. Clique no menu iniciar do equipamento e navegue até <b>System Tools > File Manager PCManFM</b>[cite: 2].<br>2. Vá até o caminho eletrônico <code>/var/cache/tomcat8/Catalina/localhost/axis2/_axis2</code> e apague todos os arquivos contidos nesta pasta[cite: 2].<br>3. Vá até a lixeira (<b>Wastebasket</b>) e limpe todos os arquivos armazenados nela[cite: 2].<br>4. Reinicie o cofre para validar se o sistema volta a operar normalmente[cite: 2]."
+  },
+
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "validador continua offline",
+      "como tirar o validador",
+      "remover validador sdm100c",
+      "verificar status gerente"
+    ],
+    "resposta": "<b>[Validação Física: Dispositivo Offline / Validador]</b><br><br>Se após limpar o cache do sistema o erro persistir, siga os seguintes passos[cite: 2]:<br>1. Acesse a aplicação do cofre com o perfil de <b>Gerente</b>, vá até a opção <b>STATUS</b> e verifique as informações do Validador[cite: 2].<br>2. Caso continue Offline, oriente o cliente a realizar o manuseio físico: remover a tampa do validador, pressionar o botão de liberação e retirar o módulo do validador para fora[cite: 2].<br>3. Abra o validador e inspecione visualmente para checar se existe alguma cédula ou objeto enroscado internamente[cite: 2].<br>4. Faça o processo reverso de encaixe, feche a estrutura e aguarde o cofre reconhecer o hardware novamente[cite: 2].<br>5. Se o problema persistir, direcione o chamado para a Fila de Redes via Device Manager e passe o protocolo ao cliente[cite: 2]."
+  },
+
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "erro database windows",
+      "dispositivo offline windows",
+      "servico wamp nao inicia",
+      "wampapache wampmysqld"
+    ],
+    "resposta": "<b>[Resolução: Erro Database / Dispositivo Offline no Windows]</b><br><br><b>Passo a Passo no Windows:</b><br>1. Acesse os diretórios do sistema e navegue até a pasta <code>C:\\software\\tomcat\\work\\Catalina\\localhost\\axis2\\_axis2</code>, apagando todo o seu conteúdo[cite: 2].<br>2. Abra os Serviços do Windows (services.msc) e valide se os serviços <b>wampapache</b> e <b>wampmysqld</b> estão ativos[cite: 2]. Caso algum deles esteja parado, force a sua inicialização manual[cite: 2].<br>3. <i>Alerta:</i> Se for apresentado um erro crítico ao tentar iniciar estes serviços do Wamp, encaminhe imediatamente o chamado para a fila de Redes no Device Manager[cite: 2].<br>4. Por fim, entre no sistema com uma conta de gerente, confira o menu <b>Status</b> e realize um reset lógico do componente se necessário[cite: 2]."
+  },
+
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "limpeza de disco sdm100",
+      "como limpar sdm100",
+      "apagar logs sdm100",
+      "espaco em disco cime"
+    ],
+    "resposta": "<b>[Limpeza de Disco - Modelo SDM100 / Cime]</b><br><br><b>Como realizar o procedimento:</b><br>1. Acesse o menu iniciar e vá em <b>System Tools > File Manager PCManFM</b>.<br>2. Navegue até a pasta <code>/opt/Prosegur</code> e apague qualquer pasta que possua a data e o horário no próprio nome.<br>3. Vá até a pasta <code>/opt/Prosegur/cashmanagerprm/data/logs</code> e apague os arquivos zipados antigos, <b>mantendo somente os dois últimos dias</b>.<br>4. Acesse a pasta <code>/home</code> e delete todos os arquivos, deixando <b>apenas</b> a pasta 'cimauser' e os instaladores essenciais (DevicemonitorLinux-3.02, Linux_installer-1.5 e PRDMLinuxCima-4.2.3).<br>5. Navegue até <code>/var/cache/tomcat8/Catalina/localhost/axis2/_axis2</code> e delete todos os arquivos internos.<br>6. Abra a Lixeira (<b>Wastebasket</b>), esvazie-a por completo e reinicie o cofre."
+  },
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "limpeza de disco sdm500",
+      "como limpar sdm500",
+      "apagar logs sdm500",
+      "arquivos temporarios sdm500"
+    ],
+    "resposta": "<b>[Limpeza de Disco - Modelo SDM500]</b><br><br><b>Como realizar o procedimento:</b><br>1. Abra o Windows Explorer e vá até o Disco Local <code>C:\\</code>.<br>2. Localize e apague pastas de instalações antigas do PRDM que estejam renomeadas com marcas de <b>data/hora</b>.<br>3. Acesse a pasta <code>C:\\wamp\\logs</code> e remova completamente os arquivos <b>Access</b> e <b>Access.old</b>.<br>4. Abra o utilitário 'Executar' do Windows (Win+R), digite <code>temp</code> e apague todos os arquivos da pasta que abrir.<br>5. Abra novamente o 'Executar', digite <code>%temp%</code> e delete todos os arquivos temporários ocultos do usuário.<br>6. Certifique-se de esvaziar a <b>Lixeira do Windows</b> e reinicie o equipamento."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "limpeza de disco gunnebo",
+      "como limpar gunnebo",
+      "apagar arquivos temporarios gunnebo",
+      "liberar espaco gunnebo"
+    ],
+    "resposta": "<b>[Limpeza de Disco - Fabricante Gunnebo]</b><br><br><b>Como realizar o procedimento:</b><br>1. Acesse o cofre utilizando as credenciais de <b>Administrador</b>.<br>2. Vá até a raiz do <code>C:\\</code> e identifique pastas de instaladores antigos ou desnecessários que contenham <b>data/hora</b> no nome (ex: software_20190102...) e delete-as.<br>3. Pressione as teclas Windows+R para abrir a caixa do 'Executar' e digite <code>temp</code>. Quando a pasta abrir, limpe todo o seu conteúdo.<br>4. Abra o 'Executar' novamente, digite <code>%temp%</code> e limpe todos os arquivos temporários ocultos ali de dentro.<br>5. Vá até a Área de Trabalho, certifique-se de que a <b>Lixeira está totalmente vazia</b> e reinicie o cofre."
+  },
+  {
+    "categoria": "cima",
+    "perguntas": [
+      "limpeza de disco minimae",
+      "como limpar minimae",
+      "apagar logs minimae",
+      "espaco em disco minimae"
+    ],
+    "resposta": "<b>[Limpeza de Disco - Modelo Minimae]</b><br><br><b>Como realizar o procedimento:</b><br>1. Realize o acesso remoto ao cofre utilizando o software <b>TeamViewer</b>.<br>2. Vá até o diretório <code>C:\\</code> e apague as pastas de atualizações anteriores do PRDM ou do XFSAgent que contenham <b>data e hora</b> no nome.<br>3. Use o comando 'Executar' para digitar <code>temp</code> e apague todos os arquivos da pasta temporária.<br>4. Use o 'Executar' mais uma vez digitando <code>%temp%</code> e limpe os arquivos ocultos de sessão do usuário.<br>5. Navegue até o caminho <code>C:\\software\\cashmanagerprm\\data\\logs</code> e apague os logs antigos zipados, <b>deixando apenas os dois últimos dias</b> baseando-se nas datas gravadas nos nomes dos arquivos.<br>6. Esvazie a lixeira do sistema e execute a reinicialização do cofre."
+  },
+
+  {
+    "categoria": "cashlogy",
     "perguntas": [
       "configurar simulador cashlogy",
       "instalar simulador",
@@ -10,6 +227,7 @@
     "resposta": "<b>[Configuração do Simulador Cashlogy - Integração TCP/IP]</b><br><br><b>Passo a Passo para Instalação:</b><br>1. Instale os drivers através do executável <b>Cashlogy Setup Wizard</b> (baixe pelo site técnico da Azkoyen em Herramientas > Drivers Versión Actual).<br>2. Execute o instalador do <b>Cashlogy Simulator</b>. <i>Nota: Recomenda-se NÃO instalar no diretório padrão 'Program Files' e garantir permissões de Leitura/Escrita na pasta escolhida.</i><br>3. Reinicie o computador após concluir a instalação para aplicar as alterações."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "configurar connector",
       "cashlogyconnector_config",
@@ -19,6 +237,7 @@
     "resposta": "<b>[Configuração do Connector / Simulador]</b><br><br><b>Como vincular o simulador ao inicializar:</b><br>1. Vá até o diretório <code>C:\\Cashlogy\\CashlogyConnector</code>.<br>2. Abra o executável <b>Cashlogyconnector_Config</b>.<br>3. No campo de configuração do dispositivo, selecione o modelo do simulador correspondente à sua aplicação para que ele seja lançado automaticamente no arranque.<br>4. Para testar se o Connector está respondendo, vá até <code>C:\\Cashlogy\\CashlogyConfig</code> e execute a aplicação <b>CashlogyConfig</b>."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "testar funcionamento cashlogy",
       "cashlogyconnector_test",
@@ -28,6 +247,7 @@
     "resposta": "<b>[Teste de Funcionamento do Simulador Cashlogy]</b><br><br><b>Como realizar os testes na máquina virtual:</b><br>1. Reinicie o PC/TPV para validar as configurações de rede.<br>2. Acesse a pasta <code>_Test</code> e execute o aplicativo <b>CashlogyConnector_Test(ES)</b>.<br>3. Clique em <b>Conectar</b> e depois em <b>Inicializar Cashlogy</b>.<br>4. A tela do <b>CashlogySimulator</b> abrirá exibindo o estado <i>'State: IDLE'</i> e o painel de moedas/cédulas (Dispense/Deposit).<br>5. <i>Aviso:</i> O simulador serve para testar inicialização, fechamento e recebimentos, mas <u>não</u> simula atolamentos físicos ou gestão de erros de hardware."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "Ola",
       "Oi",
@@ -39,6 +259,7 @@
     "resposta": "<b>Olá, como te posso ajudar hoje?</b>"
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "led amarelo piscando 2 vezes",
       "atolamento no aceitador",
@@ -49,6 +270,7 @@
     "resposta": "<b>[Erro: Atolamento no Aceitador - LED Amarelo pisca 2x]</b><br><br><b>Como resolver:</b><br>1. Coloque a palma da mão na frente do módulo do validador e os dedos na parte superior da tampa amarela.<br>2. Puxe a tampa para a frente e levante-a para abrir a cabeça do validador totalmente.<br>3. Remova qualquer cédula presa ou objeto estranho do caminho da nota.<br>4. Limpe os prismas óticos com um pano limpo que não solte fiapos e feche a tampa com firmeza."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "led amarelo piscando 3 vezes",
       "nota presa no cofre",
@@ -59,6 +281,7 @@
     "resposta": "<b>[Erro: Atolamento no Cofre/Gaveta - LED Amarelo pisca 3x]</b><br><br><b>Como resolver:</b><br>1. Remova o módulo da cabeça (aceitador) puxando a alavanca frontal para cima.<br>2. Olhe pela abertura superior do cofre (cashbox) para localizar a nota travada.<br>3. Retire a nota com cuidado para não rasgar.<br>4. Reencaixe a cabeça do validador no chassis e verifique se o LED voltou a ficar Verde Sólido."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "led amarelo aceso direto",
       "led amarelo solido",
@@ -69,6 +292,7 @@
     "resposta": "<b>[Erro: Cofre Não Encaixado ou Ausente - LED Amarelo Sólido]</b><br><br><b>Como resolver:</b><br>1. Retire a gaveta de dinheiro (cashbox) completamente do chassis de metal.<br>2. Verifique se há sujeira ou moedas caídas no fundo do trilho que estejam impedindo o encaixe perfeito.<br>3. Empurre a gaveta de volta com firmeza até ouvir o estalo do trinco físico.<br>4. O LED deve mudar imediatamente para Verde se estiver bem posicionado."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "led vermelho aceso direto",
       "led vermelho solido",
@@ -79,6 +303,7 @@
     "resposta": "<b>[Erro: Gaveta Cheia - LED Vermelho Sólido]</b><br><br><b>Como resolver:</b><br>1. O limite de armazenamento do cofre foi atingido.<br>2. Faça a sangria do equipamento retirando a gaveta atual.<br>3. Insira uma gaveta de notas (cashbox) vazia e limpa para liberar o funcionamento do terminal automaticamente."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "led vermelho piscando 1 vez",
       "falha de hardware",
@@ -89,6 +314,7 @@
     "resposta": "<b>[Erro: Falha Crítica de Hardware - LED Vermelho pisca 1x]</b><br><br><b>Como resolver:</b><br>1. O validador detectou uma falha interna permanente em seus componentes.<br>2. Desligue a alimentação do terminal.<br>3. Remova a cabeça do validador defeituosa puxando a trava.<br>4. Substitua por uma cabeça reserva configurada (spare) e religue o equipamento."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "como limpar sensores",
       "limpeza do validador",
@@ -96,10 +322,10 @@
       "rejeitando notas",
       "led amarelo pisca 1 vez"
     ],
-    "resposta": "<b>[Procedimento de Limpeza / Baixa Aceitação - LED Amarelo pisca 1x]</b><br><br><b>Como fazer:</b><br>1. Abra a tampa superior amarela puxando-a para cima e para trás.<br>2. Use um pano limpo, macio e ligeiramente umedecido com água e sabão neutro para limpar os sensores óticos e os roletes de borracha.<br>3. <b>ATENÇÃO:</b> Nunca use álcool isopropílico, solventes ou produtos abrasivos nas lentes óticas, pois eles podem opacar o plástico e inutilizar o sensor.<br>4. Seque com um pano limpo e feche a cabeça."
+    "resposta": "<b>[Procedimento: Limpeza / Baixa Aceitação - LED Amarelo pisca 1x]</b><br><br><b>Como fazer:</b><br>1. Abra a tampa superior amarela puxando-a para cima e para trás.<br>2. Use um pano limpo, macio e ligeiramente umedecido com água e sabão neutro para limpar os sensores óticos e os roletes de borracha.<br>3. <b>ATENÇÃO:</b> Nunca use álcool isopropílico, solventes ou produtos abrasivos nas lentes óticas, pois eles podem opacar o plástico e inutilizar o sensor.<br>4. Seque com um pano limpo e feche a cabeça."
   },
-
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "como ativar licenca cashlogy cloud",
       "ativacao online cashlogy",
@@ -109,6 +335,7 @@
     "resposta": "<b>[Ativação Online da Licença - Cashlogy Cloud]</b><br><br><b>Como fazer:</b><br>1. Certifica-te de que a máquina tem ligação à Internet.<br>2. Ao iniciar o software pela primeira vez, uma janela dedicada à introdução da licença ficará em primeiro plano.<br>3. Insere o código de licença gerado na plataforma Cloud e clica em <b>Ativar</b>.<br>4. O sistema valida os dados e mostra o símbolo de estado da licença na cor <b>Verde</b>, confirmando que a máquina está pronta a operar."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "ativacao offline cashlogy",
       "ativar licenca sem internet",
@@ -118,6 +345,7 @@
     "resposta": "<b>[Ativação Offline (Sem Internet) - Cashlogy Cloud]</b><br><br><b>Como fazer:</b><br>1. Na plataforma Cashlogy Cloud, acede aos dados da licença da máquina e faz o download do ficheiro com a extensão <code>.lic</code> para uma PEN USB.<br>2. Liga a PEN USB no POS/computador da máquina Cashlogy.<br>3. Na janela de ativação do software, seleciona a opção <b>Ativação Offline</b>.<br>4. Carrega o ficheiro <code>.lic</code> a partir da PEN USB para concluir o licenciamento com sucesso."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "como desativar licenca cashlogy",
       "retirar licenca da maquina",
@@ -127,6 +355,7 @@
     "resposta": "<b>[Desativação / Remoção de Licença]</b><br><br><b>Como fazer:</b><br>1. Abre o utilitário de configuração da Cashlogy na máquina.<br>2. Procura pela secção de Licenciamento e clica no botão <b>Desativar Licença</b>.<br>3. Confirma a operação no pop-up de segurança que será exibido.<br>4. O símbolo de estado da licença mudará para a cor <b>Vermelha</b>, indicando que a licença foi libertada corretamente e já pode ser reutilizada noutro equipamento."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "recomendacoes licenca cashlogy",
       "troca de pos cashlogy",
@@ -135,8 +364,8 @@
     ],
     "resposta": "<b>[Recomendações Importantes de Licenciamento]</b><br><br><b>Alertas para o Técnico:</b><br>1. <b>Troca de POS / Computador:</b> Se mudares o computador ou moveres a máquina de instalações, deves reutilizar a licença já criada que está associada ao número de série desse equipamento físico.<br>2. <b>Cuidado ao Copiar:</b> Copia sempre o código de licença para um bloco de notas ou leva-o num ficheiro <code>.txt</code> antes de abrir o software de gestão ou o 'Cashlogy Test'. A janela de ativação fica presa em primeiro plano e impede o acesso ao ambiente de trabalho.<br>3. <b>Service Manager:</b> Utiliza esta opção na Cloud para gerir e visualizar o estado de todas as licenças do teu parque de máquinas."
   },
-
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "o que e cashlogy connector",
       "como funciona o connector",
@@ -146,6 +375,7 @@
     "resposta": "<b>[Conceito: Cashlogy Connector]</b><br><br><b>Como funciona:</b><br>1. É um módulo de software que permite comunicar com os dispositivos Azkoyen sem usar funções OPOS de baixo nível.<br>2. Funciona num modelo <b>cliente-servidor</b> através de uma porta <b>TCP/IP</b> (a porta padrão é a <code>8092</code>).<br>3. O software do PDV envia uma string de texto com um comando e parâmetros para o IP/porta do Connector e aguarda o retorno com o estado da operação."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "requisitos minimos sistema",
       "requisitos de hardware cashlogy",
@@ -155,6 +385,7 @@
     "resposta": "<b>[Requisitos Mínimos de Sistema]</b><br><br><b>Especificações para o Windows:</b><br>1. <b>Processador:</b> Via C7 1800MHz (1 núcleo) ou superior.<br>2. <b>Memória RAM:</b> Mínimo de 2 GB (4 GB recomendados).<br>3. <b>Sistema Operativo:</b> Windows 7 SP1 ou superior.<br>4. <i>Nota para MiniPC:</i> Se usar arquitetura com MiniPC auxiliar (para PDVs que não usam Windows), a recomendação é CPU Dual-Core (1.5GHz), 4GB de RAM e Windows Embedded POSready 7."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "modelos de integracao",
       "integracao express",
@@ -164,14 +395,16 @@
     "resposta": "<b>[Estratégias de Integração com o PDV]</b><br><br><b>Modelos Disponíveis:</b><br>1. <b>Integração Express:</b> A mais rápida. Usa apenas 4 comandos básicos: Inicialização (<code>#I#</code>), Fechamento (<code>#E#</code>), Cobrança (<code>#C#</code>) e Backoffice (<code>#G#</code>), deixando as telas visuais por conta do Connector.<br>2. <b>Integração Completa (Full):</b> Permite usar todos os comandos individualmente ocultando totalmente as telas nativas do Cashlogy.<br>3. <b>Integração Avançada:</b> O programador personaliza os fluxos e decide se exibe ou não as telas para cada função."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "formato de valores monetarios",
       "enviar valor centavos",
       "enviar dinheiro comando"
     ],
-    "resposta": "<b>[Regra de Formatação de Valores Monetários]</b><br><br><b>Atenção ao Programar:</b><br>1. Todos os valores de dinheiro nos comandos devem ser enviados sempre na <b>menor unidade da moeda corrente</b> (em centavos).<br>2. <i>Exemplo prático:</i> Para realizar uma cobrança de € 10,00 (ou R$ 10,00), o valor que deve ser enviado no parâmetro do comando é <code>1000</code>."
+    "resposta": "<b>[Regra de Formatação de Valores Monetários]</b><br><br><b>Atenção ao Programar:</b><br>1. Todos os valores de dinheiro nos comandos devem ser enviados sempre na <b>menor unidade da moeda corrente</b> (em centavos).<br>2. <i>Exemplo prático:</i> Para realizar uma cobrança de € 10,00 (ou R$ 10,00), o valor que deve ser enviado no parâmetro do comando is <code>1000</code>."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "comando inicializacao",
       "comando i",
@@ -181,6 +414,7 @@
     "resposta": "<b>[Comando de Inicialização - #I#]</b><br><br><b>Detalhes Técnicos:</b><br>1. Este comando inicia a comunicação com a máquina e faz o autoteste de hardware. Deve ser executado <b>apenas uma vez</b> ao abrir o PDV.<br>2. <b>Tempo de resposta:</b> O processo de testes do Cashlogy leva aproximadamente <b>um minuto</b> para responder.<br>3. <b>Retorno de Sucesso:</b> <code>#0#x.yy#</code> (onde x.yy é a versão do protocolo, ex: 2.01).<br>4. <b>Retorno de Erro:</b> <code>#ER:GENERIC#2.01#</code>."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "cobranca automatica",
       "confirmacao comando c",
@@ -189,6 +423,7 @@
     "resposta": "<b>[Modos do Comando de Cobrança - #C#]</b><br><br><b>Diferença dos Parâmetros:</b><br>1. O comportamento é definido pelo parâmetro <b>'g'</b> do comando.<br>2. <b>Cobrança Automática (g = 0):</b> O Connector encerra a operação assim que o valor inserido for igual ou maior que o solicitado, devolvendo o troco automaticamente.<br>3. <b>Cobrança com Confirmação (g = 1):</b> A tela exibe o botão 'ACEITAR'. O processo aguarda que o operador clique no botão para finalizar, mesmo que o cliente já tenha inserido o valor total."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "codigos de erro connector",
       "significado wr level",
@@ -199,6 +434,7 @@
     "resposta": "<b>[Principais Códigos de Retorno e Erros]</b><br><br><b>Dicionário de Erros:</b><br>1. <code>#0#</code>: Execução bem-sucedida, sem erros.<br>2. <code>#WR:LEVEL#</code>: Aviso de que moedas ou notas atingiram o limite crítico (quase cheio/vazio), mas a máquina continua a operar.<br>3. <code>#WR:CANCEL#</code>: O utilizador cancelou a operação manualmente na tela.<br>4. <code>#ER:BUSY#</code>: Uma nova ordem foi enviada antes do comando anterior terminar.<br>5. <code>#ER:ILLEGAL#</code>: O comando não pode ser executado no estado atual (ex: cobrar sem antes inicializar)."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "adicionar troco sem tela",
       "fundo de caixa avancado",
@@ -208,6 +444,7 @@
     "resposta": "<b>[Adicionar Troco em Modo Oculto (Sem Telas)]</b><br><br><b>Fluxo para o Desenvolvedor:</b><br>1. Envie o comando avançado <code>#A#2#</code> para abrir a admissão de moedas/notas sem exibir o layout do Cashlogy.<br>2. O software do PDV deve consultar periodicamente (a cada 200-250ms) o comando <code>#Q#</code> para ler o valor acumulado que está a entrar.<br>3. Para finalizar o processo, disponibilize um botão na sua interface que envie o comando <code>#J#</code> (parar aceitação)."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "esvaziar stacker",
       "remover notas cofre",
@@ -217,15 +454,16 @@
     "resposta": "<b>[Esvaziar Stacker / Gaveta de Notas - #S#]</b><br><br><b>Importante:</b><br>1. Se o operador retirar as notas do Stacker sem enviar o comando <code>#S#</code>, a quantidade <b>não será subtraída da contabilidade eletrónica</b>.<br>2. Se o contador lógico ultrapassar a capacidade física teórica, a máquina trava por erro de capacidade.<br>3. Ao rodar no modo sem telas (<code>#S#2#</code>), o Connector fica em estado <code>BUSY</code> (Ocupado) e só responde quando detetar fisicamente que o Stacker foi removido e reinserido."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "gerenciamento socket tcp",
       "reconexao automatica",
       "perda de conexao cashlogy"
     ],
-    "resposta": "<b>[Gestão da Conexão Socket TCP/IP]</b><br><br><b>Boa Prática de Programação:</b><br>1. O manual recomenda **manter a conexão do socket sempre ativa** durante todo o expediente do PDV.<br>2. Implemente uma rotina de <b>reconexão automática</b> no seu código: se o PDV detetar uma quebra no socket, deve aguardar de 1 a 2 segundos e tentar restabelecer a ligação com o IP do Cashlogy Connector imediatamente."
+    "resposta": "<b>[Gestão da Conexão Socket TCP/IP]</b><br><br><b>Boa Prática de Programação:</b><br>1. O manual recomenda **manter a conexão do socket sempre activa** durante todo o expediente do PDV.<br>2. Implemente uma rotina de <b>reconexão automática</b> no seu código: se o PDV detetar uma quebra no socket, deve aguardar de 1 a 2 segundos e tentar restabelecer a ligação com o IP do Cashlogy Connector imediatamente."
   },
-
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "manutencao preventiva",
       "limpeza periodica",
@@ -233,9 +471,10 @@
       "limpar sensores",
       "frequencia de limpeza"
     ],
-    "resposta": "<b>[Tabela de Manutenção Preventiva e Limpeza]</b><br><br>Para garantir o funcionamento correto do Cashlogy, siga os prazos recomendados pelo fabricante:<br>• <b>A cada 15 dias (Operador):</b> Limpeza da entrada bulk (moedas), módulo de leitura de notas e sensores, recicladores, Stacker (transporte) e TR1-TR4 utilizando <b>ar comprimido não inflamável</b> e um paço húmido com água ou álcool.<br>• <b>Módulo de moedas:</b> Esvaziar e limpar o disco a cada 15 dias.<br>• <b>Anual (Técnico):</b> Revisão completa interna por pessoal autorizado."
+    "resposta": "<b>[Tabela de Manutenção Preventiva e Limpeza]</b><br><br>Para garantir o funcionamento correto do Cashlogy, siga os prazos recomendados pelo fabricante:<br>• <b>A cada 15 dias (Operador):</b> Limpeza da entrada bulk (moedas), módulo de leitura de notas e sensores, recicladores, Stacker (transporte) e TR1-TR4 utilizando <b>ar comprimido não inflamável</b> e um pano húmido com água ou álcool.<br>• <b>Módulo de moedas:</b> Esvaziar e limpar o disco a cada 15 dias.<br>• <b>Anual (Técnico):</b> Revisão completa interna por pessoal autorizado."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "erro de alimentacao",
       "fonte de alimentacao",
@@ -246,6 +485,7 @@
     "resposta": "<b>[Diagnóstico: Falha na Fonte de Alimentação]</b><br><br>Se o equipamento não ligar ou apresentar interrupções de energia:<br>1. Verifique se o cabo de alimentação principal está conectado firmemente à tomada e ao conector traseiro do Cashlogy.<br>2. Verifique se o interruptor geral está na posição ligado (I).<br>3. Caso as tensões internas estejam incorretas ou oscilando, o manual técnico determina: <i>Si el error persistiera, será necesario cambiar la fuente de alimentación completa.</i>"
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "limpar entrada bulk",
       "limpeza moedas",
@@ -255,6 +495,7 @@
     "resposta": "<b>[Procedimento: Limpeza da Entrada Bulk de Moedas]</b><br><br><b>Passo a passo recomendado a cada 15 dias:</b><br>1. Desligue o equipamento por segurança.<br>2. Remova resíduos visíveis ou objetos estranhos deixados na entrada bulk de moedas.<br>3. Utilize jatos de <b>ar comprimido não inflamável</b> para remover a poeira acumulada nos canais de passagem.<br>4. Passe um pano levemente umedecido para limpar os sensores ópticos superficiais do funil de entrada."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "limpar modulo leitura",
       "limpeza modulo notas",
@@ -264,6 +505,7 @@
     "resposta": "<b>[Procedimento: Limpeza do Módulo de Leitura de Notas]</b><br><br><b>Passo a passo para evitar rejeição de notas:</b><br>1. Abra o módulo de notas utilizando as travas amarelas de liberação.<br>2. Aplique jatos de <b>ar comprimido não inflamável</b> para retirar o pó de papel acumulado nas lentes.<br>3. Limpe cuidadosamente os sensores e prismas utilizando um <b>pano húmido com água ou mistura de água e álcool</b>.<br>4. Certifique-se de que o módulo está completamente seco antes de fechá-lo e travá-lo."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "modulo de transporte",
       "limpar tr1",
@@ -275,6 +517,7 @@
     "resposta": "<b>[Procedimento: Limpeza das Correias de Transporte (TR1 a TR4)]</b><br><br>As correias e guias de transporte de notas devem ser limpas para evitar atolamentos frequentes:<br>1. Acesse as seções TR1, TR2, TR3 e TR4 abrindo as comportas conforme indicado no manual.<br>2. Use <b>ar comprimido</b> para limpar as engrenagens e caminhos.<br>3. Com um pano levemente humedecido em solução de água/álcool, limpe a superfície das correias de borracha para remover a gordura deixada pelo manuseio das notas."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "problema no stacker",
       "stacker movil",
@@ -284,6 +527,7 @@
     "resposta": "<b>[Procedimento: Limpeza e Manutenção do Stacker / Gaveta]</b><br><br>O Stacker móvel exige cuidados periódicos para manter o empilhamento correto das notas de cofre:<br>1. Remova o Stacker do compartimento interno do Cashlogy.<br>2. Utilize <b>ar comprimido não inflamável</b> nas conexões traseiras e guias mecânicas móveis.<br>3. Verifique se não há fragmentos de notas rasgadas presos nos roletes internos.<br>4. Insira novamente o módulo garantindo que o clique mecânico de travamento ocorra firmemente."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "rejeicao de moedas",
       "moeda nao entra",
@@ -293,6 +537,7 @@
     "resposta": "<b>[Resolução de Problemas: Rejeição Constante de Moedas]</b><br><br>Se as moedas válidas estão sendo devolvidas sem contagem:<br>1. Verifique se o canal de validação não está obstruído por moedas deformadas ou objetos (como fitas ou papéis).<br>2. Limpe o disco seletor acumulador de moedas usando ar comprimido.<br>3. Resíduos acumulados no módulo de leitura de moedas podem impedir a leitura magnética/óptica. Faça a limpeza com um pano seco ou levemente umedecido."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "rejeicao de notas",
       "nota volta",
@@ -302,6 +547,7 @@
     "resposta": "<b>[Resolução de Problemas: Rejeição Constante de Notas]</b><br><br>Quando o validador recusa notas repetidamente:<br>1. Verifique o estado físico da nota (notas muito desgastadas, rasgadas, úmidas ou com fitas adesivas serão rejeitadas por segurança).<br>2. Sensores ópticos sujos geram falsos positivos de fraude. Realize a limpeza dos sensores e prismas conforme o <b>Anexo 1 do Manual Técnico</b> usando pano umedecido em água/álcool.<br>3. Certifique-se de que as notas inseridas correspondem às denominações configuradas na licença do seu Connector."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "erros de hardware",
       "codigo de erro",
@@ -310,33 +556,17 @@
     ],
     "resposta": "<b>[Guia de Diagnóstico de Erros de Hardware]</b><br><br>Se a máquina parar e emitir avisos luminosos ou códigos de falha:<br>1. Abra o compartimento afetado e use o fluxo visual para inspecionar travas soltas ou módulos desalinhados.<br>2. Verifique se os cabos de comunicação de dados (barramento interno) não foram desconectados acidentalmente durante a remoção de um atolamento.<br>3. Se um sensor continuar acusando bloqueio mesmo após a limpeza com ar comprimido, reinicie o Cashlogy para recalibrar as leituras ópticas em zero."
   },
-
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "iniciar aceitacao moedas",
       "comando i moedas",
-      "habilitar moedas",
-      "comando i"
+      "habilitar moedas"
     ],
     "resposta": "<b>[Comando: Iniciar Aceitação de Moedas - #I#]</b><br><br><b>Funcionamento Técnico:</b><br>1. O comando <code>#I#</code> ativa o validador de moedas para que o hardware comece a receber os valores fisicamente.<br>2. <b>Boa prática:</b> O software de automação deve consultar periodicamente (a cada 200-250ms) o comando <code>#Q#</code> para ler o valor acumulado que está a entrar.<br>3. Para finalizar o processo de receção com segurança, disponibilize um botão na interface do PDV que envie o comando <code>#J#</code> (parar aceitação)."
   },
   {
-    "perguntas": [
-      "remover notas cofre",
-      "comando s",
-      "contabilidade eletronica notas"
-    ],
-    "resposta": "<b>[Comando: Esvaziar Stacker / Gaveta de Notas - #S#]</b><br><br><b>Regras Importantes:</b><br>1. Se o operador retirar as notas do Stacker sem enviar o comando <code>#S#</code>, a quantidade <b>não será subtraída da contabilidade eletrónica interna</b> do equipamento.<br>2. Se o contador lógico ultrapassar a capacidade física teórica, a máquina trava por erro de transbordo.<br>3. Ao rodar no modo sem telas (<code>#S#2#</code>), o Connector fica em estado <code>BUSY</code> (Ocupado) e só responde quando detetar fisicamente que o Stacker foi removido e reinserido."
-  },
-  {
-    "perguntas": [
-      "perda de conexao cashlogy",
-      "reconexao automatica",
-      "socket tcp caido"
-    ],
-    "resposta": "<b>[Gestão da Conexão Socket TCP/IP]</b><br><br><b>Diretrizes do Manual Técnico:</b><br>1. O manual recomenda veementemente **manter a conexão do socket TCP sempre ativa** durante todo o expediente do ponto de venda.<br>2. Se houver queda de energia ou desconexão da rede, implemente uma rotina de <i>reconexão automática</i> no seu software que tente restabelecer o canal com o IP do Connector a cada 5 segundos.<br>3. Não envie comandos em massa sem aguardar o retorno da string anterior para evitar estouro de buffer no socket."
-  },
-  {
+    "categoria": "cashlogy",
     "perguntas": [
       "como esvaziar moedas",
       "comando e moedas",
@@ -346,6 +576,7 @@
     "resposta": "<b>[Comando: Esvaziamento de Moedas - #E#]</b><br><br><b>Procedimento Técnico:</b><br>1. O comando <code>#E#</code> inicia o processo físico de ejeção controlada das moedas armazenadas nos hoppers/recicladores.<br>2. Pode ser configurado para esvaziamento total ou parcial por denominação.<br>3. <b>Alerta de Segurança:</b> Certifique-se de que a gaveta ou copo recetor de moedas está posicionado corretamente antes de disparar o comando, pois o hardware enviará as moedas de forma contínua até que o sensor de nível acuse 'vazio'."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "niveis de armazenamento",
       "comando m",
@@ -355,6 +586,7 @@
     "resposta": "<b>[Comando: Consulta de Níveis de Inventário - #M#]</b><br><br><b>Aplicação do Comando:</b><br>1. O comando <code>#M#</code> retorna ao sistema o estado exato do inventário de moedas e notas dentro dos recicladores.<br>2. A resposta vem formatada separando os valores por moedas (Hoppers) e notas (Recicladores compactos).<br>3. Utilize este comando no fecho de caixa e na abertura do dia para validar se o fundo de maneio bate com os relatórios gerenciais do PDV."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "como reiniciar cashlogy",
       "comando y",
@@ -364,6 +596,7 @@
     "resposta": "<b>[Comando: Reset de Hardware por Software - #Y#]</b><br><br><b>Quando Utilizar:</b><br>1. O comando <code>#Y#</code> força a reinicialização lógica do firmware e dos motores do Cashlogy sem a necessidade de puxar o cabo da tomada.<br>2. É ideal para limpar estados de erro voláteis causados por pequenas obstruções de sensores ópticos que já foram limpas com ar comprimido.<br>3. <b>Nota:</b> Após o envio do <code>#Y#</code>, aguarde o retorno do estado do Connector voltar para <code>READY</code> antes de enviar novos comandos de venda."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "atolamento tr1",
       "atolamento tr2",
@@ -374,15 +607,17 @@
     "resposta": "<b>[Resolução de Problemas: Nota Presa no Transporte (TR1 - TR4)]</b><br><br><b>Procedimento de Extração:</b><br>1. Desligue o interruptor geral do equipamento.<br>2. Abra a comporta superior ou lateral correspondente à seção TR indicada pelo diagnóstico visual.<br>3. <b>Nunca use objetos pontiagudos</b> (como pinças ou chaves de fendas) para puxar a nota, pois isso rasga as correias de borracha.<br>4. Gire manualmente as engrenagens plásticas no sentido do fluxo para que a nota saia de forma natural e sem rasgar."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "moeda presa no disco",
       "hopper travado",
       "bloqueio modulo moedas",
       "erro esvaziamento"
     ],
-    "resposta": "<b>[Resolução de Problemas: Bloqueio Mecânico nos Recicladores de Moedas]</b><br><br>Se o motor de moedas fizer ruído de esforço ou acusar erro mecânico:<br>1. Desligue a máquina e puxe o módulo de moedas para fora pelas guias metálicas.<br>2. Verifique se há moedas tortas, amassadas ou objetos estranhos (grampos, clipes) travando o disco seletor.<br>3. Remova o objeto manualmente girando o disco no sentido inverso.<br>4. Limpe o fundo do prato acumulador para remover o zinco e fuligem que se soltam das moedas com o tempo."
+    "resposta": "<b>[Resolução de Problemas: Bloqueio Mecânico nos Recicladores de Moedas]</b><br><br>Se o motor de moedas fizer ruído de escolher ou acusar erro mecânico:<br>1. Desligue a máquina e puxe o módulo de moedas para fora pelas guias metálicas.<br>2. Verifique se há moedas tortas, amassadas ou objetos estranhos (grampos, clipes) travando o disco seletor.<br>3. Remova o objeto manualmente girando o disco no sentido inverso.<br>4. Limpe o fundo do prato acumulador para remover o zinco e fuligem que se soltam das moedas com o tempo."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "configurar ip cashlogy",
       "mudar ip connector",
@@ -392,6 +627,7 @@
     "resposta": "<b>[Configuração de Rede e Comunicação TCP/IP]</b><br><br><b>Parâmetros Padrão de Fábrica:</b><br>• O Cashlogy Connector comunica-se por padrão através do protocolo <b>TCP/IP</b> utilizando sockets.<br>• Certifique-se de que o IP configurado no arquivo de inicialização da sua aplicação aponta exatamente para a máquina onde o serviço do Connector está rodando (geralmente <code>127.0.0.1</code> se estiver no mesmo PC, ou o IP fixo da rede local).<br>• Verifique nas regras do <b>Firewall do Windows</b> se a porta de comunicação do socket TCP está totalmente liberada para tráfego de entrada e saída."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "luz vermelha piscando",
       "maquina piscando vermelho",
@@ -402,6 +638,7 @@
     "resposta": "<b>[Guia Visual: Led Vermelho Piscando ou Aceso]</b><br><br><b>O que significa:</b> O Cashlogy pisca em vermelho para indicar que há um bloqueio físico (papel ou moeda presa) ou que um módulo interno importante está totalmente aberto ou desencaixado.<br><br><b>Como resolver:</b><br>1. Verifique na tela do computador qual área é indicada (Notas ou Moedas).<br>2. Abra a tampa externa e certifique-se de que todas as travas plásticas amarelas estão totalmente fechadas e firmes.<br>3. Se houver alguma nota ou moeda visível no caminho, retire-a com cuidado e feche o compartimento até ouvir o 'clique' mecânico."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "maquina travou com dinheiro",
       "dinheiro ficou preso",
@@ -412,6 +649,7 @@
     "resposta": "<b>[Resolução: Nota Engatada ou Presa no Transporte]</b><br><br>Se uma nota ficar presa no meio do caminho das correias (TR1 a TR4):<br>1. <b>Desligue a máquina da tomada</b> imediatamente para evitar que os motores puxem e rasguem o dinheiro.<br>2. Abra as tampas de acesso usando as travas amarelas conforme o local indicado.<br>3. <b>ATENÇÃO: Nunca puxe a nota usando objetos pontiagudos</b> (como chaves ou pinças), pois isso rasga as correias de borracha.<br>4. Gire manualmente as engrenagens plásticas para que a nota ande e saia sozinha, sem forçar."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "moeda ficou entalada",
       "moeda travou tudo",
@@ -422,6 +660,7 @@
     "resposta": "<b>[Resolução: Bloqueio no Módulo de Moedas / Hopper]</b><br><br>Se o motor de moedas fizer um barulho estranho (como se estivesse fazendo muita força) ou travar:<br>1. Desligue o equipamento no interruptor.<br>2. Puxe o prato de moedas para fora usando as guias metálicas laterais.<br>3. Procure por moedas tortas, amassadas, clipes, grampos ou sujeira grossa travando o prato giratório.<br>4. Gire o prato com as mãos no sentido inverso para desprender o objeto e limpe o fundo do compartimento."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "como esvaziar o cofre",
       "retirar dinheiro do cofre",
@@ -432,6 +671,7 @@
     "resposta": "<b>[Procedimento: Retirar Notas do Cofre / Stacker Móvel]</b><br><br>Para recolher o dinheiro guardado com segurança e não descontrolar o sistema eletrônico:<br>1. Acesse o painel de gerenciamento do seu sistema no computador e selecione a opção de esvaziamento.<br>2. Abra a porta inferior da máquina e puxe a gaveta (Stacker móvel) usando a alça plástica.<br>3. Retire as notas guardadas.<br>4. **IMPORTANTE:** Coloque a gaveta vazia de volta e certifique-se de que ela deu o clique de encaixe. O sistema precisa registrar fisicamente que a gaveta foi removida e reinserida para zerar o contador interno lógicos de notas."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "maquina rejeita tudo",
       "nao aceita nenhuma nota",
@@ -441,6 +681,7 @@
     "resposta": "<b>[Problema: Rejeição Constante de Notas Válidas]</b><br><br>Se notas novas e limpas estão voltando sem que a máquina faça a leitura:<br>1. O pó que solta do papel-moeda se acumula nos sensores ópticos e bloqueia a leitura do laser.<br>2. Abra o módulo de notas usando as alças amarelas.<br>3. Use uma bombinha de <b>ar comprimido</b> para soprar a poeira das lentes e sensores.<br>4. Passe um pano de microfibra levemente umedecido (com água ou uma gota de álcool) nos sensores e prismas de vidro superiores e inferiores. Aguarde secar antes de fechar."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "moeda volta direto",
       "nao aceita moedas",
@@ -450,6 +691,7 @@
     "resposta": "<b>[Problema: Rejeição Constante de Moedas Válidas]</b><br><br>Se as moedas são jogadas na bandeja de devolução imediatamente ao entrar:<br>1. Verifique se não há sujeira pegajosa (como resquício de refrigerante ou fita adesiva) no funil de entrada (Bulk).<br>2. Limpe a calha interna de moedas soprando ar comprimido para remover o pó metálico.<br>3. Se o canal de validação magnética estiver muito sujo de fuligem, passe um pano seco para limpar os sensores ópticos de passagem."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "como limpar por fora",
       "limpeza do caixa externo",
@@ -459,6 +701,7 @@
     "resposta": "<b>[Manutenção: Limpeza Externa do Equipamento]</b><br><br>Para limpar a carcaça do Cashlogy de forma segura:<br>1. Nunca borrife água, álcool ou produtos de limpeza diretamente nas fendas da máquina.<br>2. Use um pano macio levemente umedecido com água e sabão neutro para limpar a parte plástica externa e a bandeja de moedas.<br>3. **PROIBIDO:** Nunca use solventes abrasivos, palhas de aço ou produtos químicos fortes, pois eles danificam os sensores e mancham o visor receptor."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "computador nao acha a maquina",
       "erro de comunicacao",
@@ -469,6 +712,7 @@
     "resposta": "<b>[Suporte: Erro de Comunicação ou Conexão Caída]</b><br><br>Se o seu programa de vendas disser que o Cashlogy está desconectado:<br>1. Verifique se o cabo de rede (Ethernet) ou cabo USB na parte traseira da máquina não foi puxado ou afrouxado durante a limpeza.<br>2. Certifique-se de que o computador do caixa está na mesma rede IP da máquina.<br>3. Verifique se o programa 'Cashlogy Connector' está aberto e rodando em segundo plano perto do relógio do Windows."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "maquina totalmente apagada",
       "nao liga nada",
@@ -478,6 +722,7 @@
     "resposta": "<b>[Problema: Equipamento Completamente Apagado]</b><br><br>Se nenhuma luz acende e a máquina parece totalmente desligada:<br>1. Verifique se o cabo preto de energia está bem firme na tomada da parede e na entrada traseira do equipamento.<br>2. Procure pelo botão liga/desliga geral na parte de trás da máquina e confirme se ele está na posição ligado <b>(I)</b>.<br>3. Se a tomada estiver funcionando normalmente e mesmo assim não ligar, feche a máquina e chame o suporte para avaliar se a fonte de alimentação interna queimou."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "o que limpar a cada 15 dias",
       "rotina do operador",
@@ -486,6 +731,7 @@
     "resposta": "<b>[Cronograma: Limpeza Obrigatória a cada 15 Dias (Operador)]</b><br><br>O manual do fabricante exige que quem opera a máquina faça a limpeza a cada 15 dias para evitar paradas mecânicas. Limpe:<br>• A entrada de moedas (Bulk) soprando ar comprimido.<br>• Os sensores do leitor de notas com pano úmido.<br>• As correias de transporte plásticas abertas.<br>• O prato giratório do módulo acumulador de moedas."
   },
   {
+    "categoria": "cashlogy",
     "perguntas": [
       "gaveta cheia trava",
       "erro de transbordo",
@@ -494,7 +740,4 @@
     ],
     "resposta": "<b>[Aviso: Capacidade Máxima e Erro de Transbordo]</b><br><br><b>Por que acontece:</b> O Cashlogy controla eletronicamente a quantidade exata de moedas e notas dentro dele. Se você continuar vendendo sem esvaziar os compartimentos quando o sistema avisa, a máquina trava por segurança física para não amassar o dinheiro lá dentro.<br><br><b>Como evitar:</b> Faça a retirada do excesso de dinheiro (sangria) pelo painel do seu software de vendas sempre que o sistema avisar que o limite operacional está próximo."
   }
-
 ]
-
-

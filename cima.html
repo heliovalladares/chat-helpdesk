@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Chat Help Desk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+  <h2 id="artext">💬 Chat Help Desk</h2>
+  <div class="chat_window">
+    
+    <!-- 🌟 ATUALIZADO: A mensagem inicial agora nasce estática dentro da lista para evitar falhas de carregamento -->
+    <ul class="messages" id="messages">
+      <li class="message left">
+        <div class="avatar bot"></div>
+        <div class="text_wrapper">Olá! Qual a sua dúvida hoje? Por favor, <b>selecione uma categoria nos botões abaixo</b> para começarmos.</div>
+      </li>
+    </ul>
+
+    <!-- 🌟 ATUALIZADO: Garante os atributos corretos de busca e escopo -->
+    <div class="quick_replies" id="quick_replies" style="display: flex; gap: 8px; padding: 10px; background: #222; border-top: 1px solid #333; flex-wrap: wrap;">
+      <button class="quick_btn" data-search="configurar simulador cashlogy" data-categoria="cima">⚙️ CIMA</button>
+      <button class="quick_btn" data-search="configurar connector" data-categoria="gunnebo">🔌 Gunnebo</button>
+      <button class="quick_btn" data-search="esvaziar stacker" data-categoria="cashlogy">📦 CashLogy</button>
+      <button class="quick_btn" data-search="gerenciamento socket tcp" data-categoria="diebold">🌐 Diebold</button>
+    </div>
+
+    <div class="bottom_wrapper">
+      <input id="msg_input" placeholder="Digite sua dúvida..." />
+      <button id="send_button" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+
+  <div id="admin_panel" style="display:none;margin-top:20px">
+    <h3>Admin – Perguntas e Respostas</h3>
+    <label>Perguntas (separadas por vírgula)</label>
+    <input id="admin_questions" class="form-control">
+    <label>Resposta</label>
+    <textarea id="admin_answer" class="form-control"></textarea>
+    <button id="admin_save" class="btn btn-success" style="margin-top:10px">Salvar</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/matcher.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>

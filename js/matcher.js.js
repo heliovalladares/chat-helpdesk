@@ -5,8 +5,8 @@ function normalizar(texto) {
     .toString()
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "") // Remove acentos
-    .replace(/[^\w\s]/g, "")         // Remove símbolos extras
+    .replace(/[\u0300-\u036f]/g, "") 
+    .replace(/[^\w\s]/g, "")         
     .trim();
 }
 
@@ -28,8 +28,8 @@ function calcularScore(perguntaBaseOriginal, palavrasUsuario) {
   return score;
 }
 
-// 3. Função principal chamada internamente pelo chat.js
-function encontrarResposta(textoUsuario, respostas) {
+// 3. Função principal chamada pelo chat para encontrar a resposta baseada na categoria
+function encontrarResposta(textoUsuario, respostas, categoriaFiltro = null) {
   if (!textoUsuario || !respostas || respostas.length === 0) return null;
 
   const textoLimpo = normalizar(textoUsuario);
@@ -40,9 +40,12 @@ function encontrarResposta(textoUsuario, respostas) {
   const SCORE_MINIMO = 2; 
 
   respostas.forEach(item => {
+    // Validação de categoria (Garante que "Gunnebo" e "gunnebo" deem match)
+    if (categoriaFiltro && item.categoria && item.categoria.toLowerCase() !== categoriaFiltro.toLowerCase()) {
+      return;
+    }
+
     let perguntasBase = [];
-    
-    // Tratamento de segurança caso venha array puro ou string por vírgula
     if (Array.isArray(item.perguntas)) {
       perguntasBase = item.perguntas;
     } else if (typeof item.perguntas === "string") {
@@ -53,11 +56,9 @@ function encontrarResposta(textoUsuario, respostas) {
       let scoreAtual = 0;
       const perguntaLimpaBanco = normalizar(p);
 
-      // CASO DO BOTÃO QUICK REPLY: Se o data-search coincidir exatamente com o item do JSON
       if (perguntaLimpaBanco === textoLimpo) {
-        scoreAtual = 100; // Prioridade total absoluta
+        scoreAtual = 100; // Prioridade máxima se a frase for idêntica
       } else {
-        // Caso o utilizador tenha digitado livremente na caixa de texto
         scoreAtual = calcularScore(p, palavrasUsuario);
       }
 
@@ -68,6 +69,5 @@ function encontrarResposta(textoUsuario, respostas) {
     });
   });
 
-  console.log(`[HelpDesk Matcher] Busca: "${textoUsuario}" | Score Alcançado: ${maiorScore}`);
   return maiorScore >= SCORE_MINIMO ? melhorResposta : null;
 }
