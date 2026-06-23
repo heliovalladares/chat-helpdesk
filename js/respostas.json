@@ -1,6 +1,108 @@
 [
 
   {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "atualizar firmware sts mei",
+      "gravar firmware cashflow sts",
+      "carregar variant flash sc advance",
+      "configurar produto software sts",
+      "atualizacao de cedulas mei cashflow"
+    ],
+    "resposta": "<b>[Software: Atualização de Firmware via STS]</b><br><br>Siga as instruções abaixo para preparar o arquivo de atualização das tabelas de cédulas no software MEI Cashflow STS:<br><br><b>Passo a Passo:</b><br>1. Abra o programa <b>MEI Cashflow STS</b> em seu computador.<br>2. No menu superior esquerdo, clique em <b>File</b> e selecione a opção <b>New</b> (ou use o atalho Ctrl+N).<br>3. Na janela 'Select Product', selecione o modelo <b>SC Advance Bill Acceptor</b> (ou Cashflow SC Series) e clique em <b>OK</b>.<br>4. Na árvore de configurações principal, localize e dê um duplo clique na opção <b>Modules (Edit)</b>.<br>5. Na tela de módulos, carregue os dois arquivos necessários para o validador:<br>&nbsp;&nbsp;&nbsp;&nbsp;• No campo <b>Application Firmware</b>: carregue o arquivo de aplicação correspondente (ex: final <code>_RETAIL_SL_BNF</code>).<br>&nbsp;&nbsp;&nbsp;&nbsp;• No campo <b>Variant (Bill-set) Firmware</b>: carregue a tabela de cédulas atualizada (ex: <code>520240403 SCN83 BRL FLASH</code>).<br>6. Clique em <b>OK</b> para consolidar a nova estrutura de dados."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "enviar firmware para o validador",
+      "comando write no sts mei",
+      "descarregar atualizacao sc advance",
+      "gravar flash no bocal mei",
+      "concluir atualizacao de notas mei"
+    ],
+    "resposta": "<b>[Software: Envio dos Dados para o Equipamento via STS]</b><br><br>Após estruturar e selecionar os arquivos de aplicação e variante corretos, siga o procedimento de gravação física no validador:<br><br><b>Passo a Passo:</b><br>1. Com o equipamento devidamente conectado e ligado à máquina, vá até o menu de ícones superiores do software STS.<br>2. Localize e clique no botão <b>Write</b> (ícone identificando a ação de envio/gravação no dispositivo).<br>3. Uma janela de confirmação para a ação de escrita será exibida na tela. Clique no botão <b>OK</b> para autorizar o início do processo.<br>4. A barra de progresso inferior será preenchida. <b>Atenção:</b> Nunca desconecte os cabos ou desligue a energia do cofre ou validador durante o preenchimento desta barra de progresso.<br>5. Aguarde a mensagem de sucesso informando que os arquivos foram transmitidos com integridade para o hardware."
+  },
+
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "leitora de notas lenta gunnebo",
+      "validador puxando nota devagar",
+      "superaquecimento leitora cofre",
+      "leitora intelsafe lenta",
+      "limpar validador gunnebo"
+    ],
+    "resposta": "<b>[Manutenção: Leitora de Notas Lenta / Superaquecimento]</b><br><br>Se a leitora de notas começar a reduzir a velocidade de aceitação ou rejeitar muitas cédulas:<br><br><b>Causa e Solução:</b><br>1. <b>Superaquecimento:</b> O uso contínuo e prolongado pode aquecer a leitora. A orientação oficial é aguardar o equipamento resfriar por cerca de 1 hora.<br>2. <b>Acúmulo de Sujeira:</b> Cédulas soltam poeira nos sensores ópticos. Com o cofre desligado, faça a limpeza cuidadosa do caminho de notas utilizando um pano seco que não solte fiapos para restaurar a sensibilidade de leitura."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "aviso de porta aberta cofre",
+      "erro sensor da porta intelsafe",
+      "porta fechada mas acusa aberta",
+      "manopla da porta gunnebo",
+      "trava da porta emperrada"
+    ],
+    "resposta": "<b>[Operação: Erro de Porta Aberta no Sistema]</b><br><br>Procedimento quando o sistema exibe o aviso de porta aberta, mesmo com a porta fisicamente encostada:<br><br><b>Passo a Passo:</b><br>1. <b>Fechamento Incompleto:</b> Certifique-se de que nenhum volume ou malote esteja obstruindo os batentes internos.<br>2. <b>Giro da Manopla:</b> Gire a manopla externa da porta firmemente até o final do curso para garantir o acionamento completo das trancas e dos sensores magnéticos.<br>3. Se o erro persistir após reabrir e fechar forçando a manopla até o fim, o sensor pode estar desalinhado, exigindo verificação física da fiação."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "aviso de malote nao inserido",
+      "sensor do malote gunnebo",
+      "cofre nao reconhece malote",
+      "malote intelsafe erro",
+      "encaixar malote no trilho"
+    ],
+    "resposta": "<b>[Operação: Ajuste e Erro de Malote Não Inserido]</b><br><br>Se o cofre acusar que o malote está ausente mesmo estando dentro do equipamento:<br><br><b>Ações de Correção:</b><br>1. <b>Posicionamento no Trilho:</b> Retire o malote e insira-o novamente, empurrando-o com firmeza até o final do trilho guia para acionar o microswitch traseiro.<br>2. <b>Inspeção Visual:</b> Verifique se o malote não está danificado, rasgado ou com a estrutura plástica de encaixe torta.<br>3. Se estiver bem encaixado e em bom estado, o sensor do malote ou o cabo de comunicação interno pode estar danificado, sendo necessária a substituição técnica."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "recibo em branco gunnebo",
+      "impressora nao sai texto",
+      "trocar bobina cofre intelsafe",
+      "impressora termica prosegur",
+      "lado correto do papel impressora"
+    ],
+    "resposta": "<b>[Impressora: Recibo Saindo em Branco / Troca de Bobina]</b><br><br>Se a impressora realiza o movimento de impressão, mas o papel sai totalmente sem texto ou em branco:<br><br><b>Solução Rápida:</b><br>1. <b>Lado Invertido do Papel:</b> O papel utilizado é térmico e só possui o reagente químico em um dos lados[cite: 3]. Se a bobina for inserida do lado errado, a cabeça térmica não conseguirá gravar o texto.<br>2. <b>Correção:</b> Abra o compartimento da impressora, remova a bobina e inverta a posição do papel (o lado correto deve ficar virado para cima/em direção à guilhotina). Feche a tampa pressionando até travar e realize um teste de impressão."
+  },
+
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "codigo de leds mei cashflow",
+      "leds piscando validador sc advance",
+      "led vermelho aceso mei",
+      "tabela de erros led sc advance",
+      "diagnostico de falhas validador cpi"
+    ],
+    "resposta": "<b>[Diagnóstico: Códigos de LEDs - Série SC Advance]</b><br><br>A tabela de LEDs auxilia na identificação rápida de falhas normais, leves ou graves no módulo aceitador[cite: 96, 98]:<br><br><b>Principais Estados e Ações:</b><br>• <b>Verde Sólido (Solid Green):</b> Status Normal. O equipamento está pronto para operar [cite: 98].<br>• <b>1 Piscada Amarela (1 Flash Yellow):</b> Gaveta de dinheiro desalinhada ou ausente (Cashbox not seated)[cite: 98]. <i>Ação:</i> Reencaixe o malote/gaveta firmemente [cite: 98].<br>• <b>2 Piscadas Amarelas (2 Flash Yellow):</b> Cédula presa no aceitador (Jam in acceptor)[cite: 98]. <i>Ação:</i> Remova o módulo aceitador e limpe o caminho da nota [cite: 98].<br>• <b>3 Piscadas Amarelas (3 Flash Yellow):</b> Cédula presa na gaveta/malote (Jam in cashbox)[cite: 98]. <i>Ação:</i> Remova o aceitador e libere a obstrução de entrada da gaveta [cite: 99].<br>• <b>Vermelho Sólido (Solid Red):</b> Gaveta/Malote de dinheiro cheio (Cashbox full)[cite: 99]. <i>Ação:</i> Substitua por um malote/gaveta vazia [cite: 99].<br>• <b>1 Piscada Vermelha (1 Flash Red):</b> Falha interna de hardware no aceitador (Acceptor fault)[cite: 99]. <i>Ação:</i> Substitua o módulo por uma peça reserva devidamente programada[cite: 99]."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "remover modulo aceptador mei",
+      "retirar aceitador sc advance",
+      "como tirar modulo de notas cpi",
+      "trava do aceitador cashflow",
+      "manutencao fisica validador mei"
+    ],
+    "resposta": "<b>[Manutenção Física: Remoção e Inserção do Módulo]</b><br><br>Siga as instruções práticas para manusear e extrair os módulos do chassi sem quebrar os encaixes plásticos:<br><br><b>Passo a Passo:</b><br>1. <b>Para remover o módulo aceitador:</b> Localize a alavanca de liberação (release lever) na parte frontal do Módulo Aceptador[cite: 224].<br>2. Puxe esta alavanca de liberação <b>para cima (pull upwards)</b> e puxe o módulo para fora, afastando-o do chassi[cite: 224].<br>3. <b>Para inserir o módulo aceitador:</b> Deslize-o de volta nas guias até que a alavanca de liberação trave firmemente no lugar com um clique audível[cite: 224].<br>4. <b>Remoção da Guia de Entrada (Bocal/Bill Entry Guide):</b> Se precisar retirar o bocal frontal, insira com muito cuidado uma chave de fenda de ponta chata entre a guia de entrada e o módulo aceitador para liberar as travas sem forçar a fiação[cite: 228, 229]."
+  },
+  {
+    "categoria": "gunnebo",
+    "perguntas": [
+      "software sts mei cashflow",
+      "programa sts cpi",
+      "atualizar firmware sc advance",
+      "calibrar validador mei",
+      "ajuste de sensores cashflow"
+    ],
+    "resposta": "<b>[Software: Uso do STS - Support Tool Software]</b><br><br>O software de suporte (STS) é utilizado para manutenções avançadas, atualizações e ajustes finos nos sensores [cite: 25]:<br><br><b>Funções e Conceitos Principais:</b><br>• <b>Modo de Calibração:</b> Executado após limpezas profundas ou manutenções de níveis 2 e 3[cite: 24, 25]. Quando o validador indicar o modo de calibração via LED (piscando Verde-Amarelo-Vermelho), insira o cupom de teste específico de calibração (Calibration Test Coupon) [cite: 99, 100].<br>• <b>Atualização de Firmware:</b> Realizada via software STS para atualizar tabelas de cédulas ou correções críticas[cite: 25]. Nunca desligue a energia da máquina enquanto o download flash estiver em andamento [cite: 75].<br>• <b>Princípio de Validação:</b> Explique aos técnicos que a validação ocorre por vários comprimentos de onda de luz transmitidos diretamente através da nota (sensores ópticos emissores e foto-receptores)[cite: 24, 466]. Eles comparam as dimensões e a resposta de frequência da tinta magnética com o padrão oficial gravado no sistema[cite: 466]."
+  },
+
+  {
     "categoria": "cima",
     "perguntas": [
       "restaurar imagem macrium reflect",
