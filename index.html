@@ -44,6 +44,20 @@
   </div>
 </div>
 
+<div id="meuModalImagem" class="modal-zoom-container" onclick="this.style.display='none'">
+  <img id="imagemModal">
+  <span class="modal-zoom-close">&times;</span>
+</div>
+
+<script>
+function abrirModalJanela(src) {
+  var modal = document.getElementById('meuModalImagem');
+  var imgModal = document.getElementById('imagemModal');
+  modal.style.display = 'flex';
+  imgModal.src = src;
+}
+</script>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/matcher.js.js"></script>
 <script src="js/chat.js.js"></script>

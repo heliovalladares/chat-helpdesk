@@ -95,20 +95,26 @@ $(document).ready(function () {
   }
 
   function addMessage(text, side) {
-    const avatar = side === "left" ? '<div class="avatar bot"></div>' : '<div class="avatar user"></div>';
+    const avatar = side === "left" ? '<div class="avatar bot"></div>' : '<div class="avatar user\"></div>';
     
-    $messages.append(`
+    // Criamos o elemento da mensagem como um objeto HTML do jQuery
+    const $msgElement = $(`
       <li class="message ${side}">
         ${avatar}
-        <div class="text_wrapper">${text}</div>
+        <div class="text_wrapper"></div>
       </li>
     `);
+    
+    // Usamos .html() para renderizar as tags de imagem <img> e formatações <b> <br> corretamente
+    $msgElement.find(".text_wrapper").html(text);
+    
+    // Adiciona na lista de mensagens
+    $messages.append($msgElement);
     
     if ($messages[0]) {
       $messages.animate({ scrollTop: $messages[0].scrollHeight }, 200);
     }
   }
-
   // Busca e exibe a resposta técnica correspondente
   function botReply(textoUsuario) {
     if (!categoriaAtiva) {
